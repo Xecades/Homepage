@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Code Editor</title>
+    <script src="https://cdn.bootcss.com/ace/1.4.9/ace.min.js"></script>
+    <script src="https://cdn.bootcss.com/ace/1.4.9/ext-beautify.min.js"></script>
+    <script src="https://cdn.bootcss.com/ace/1.4.9/ext-language_tools.min.js"></script>
+    <script src="https://cdn.bootcss.com/ace/1.4.9/mode-c_cpp.min.js"></script>
+    <script src="https://cdn.bootcss.com/ace/1.4.9/theme-clouds.min.js"></script>
+    <style>
+        * {margin: 0;padding: 0;}
+    </style>
+</head>
+
+<body>
+    <pre id="code" style="height: 100%;"><textarea>
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <string>
+using namespace std;
+int main()
+{
+	
+	return 0;
+}</textarea></pre>
+    <script>
+        editor = ace.edit("code");
+        editor.setTheme("ace/theme/clouds");
+        editor.session.setMode("ace/mode/c_cpp");
+        editor.setFontSize(19);
+        editor.setReadOnly(false);
+        editor.setOption("wrap", "free");
+        ace.require("ace/ext/language_tools");
+        ace.config.set('basePath', '.');
+        editor.setOptions({
+            enableBasicAutocompletion: true,
+            enableSnippets: true,
+            enableLiveAutocompletion: true
+        });
+    </script>
+</body>
+
+</html>

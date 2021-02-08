@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="canvas">
+        你的浏览器不支持 canvas，请升级你的浏览器
+    </canvas>
+    <div id="more"></div>
+    <div id="plate" class="plate">
+        <div id="notice">
+            <h1 class="no-select">Xecades CA generator</h1>
+            <div class="content clearfix no-select">
+                <div class="left fl">
+                    <p class="fl">debug 模式<br>画笔颜色<br>debug 路径颜色<br>画笔大小(px, 修改会清空内容!)<br>迭代速耗时(ms)</p>
+                    <p class="fr">
+                        <input id="debug" type="checkbox" onchange="attributeChg('debug')" /><br>
+                        <input id="color" type="color" value="#808080" onchange="attributeChg('color')" /><br>
+                        <input id="debugColor" type="color" value="#00ffff" onchange="attributeChg('debugColor')" /><br>
+                        <input id="size" type="number" max="100" min="1" value="5" onchange="attributeChg('size')"><br>
+                        <input id="spacing" type="number" min="1" value="10" onchange="attributeChg('spacing')">
+                    </p>
+                </div>
+                <div class="right fr">
+                    <b>左键</b>绘制<br><b>右键</b> / <b>中键</b>清除<br><b>F键</b>迭代<br>
+                </div>
+            </div>
+            <div class="copyright">
+                Developed by <a href="https://xecades.xyz/" target="_blank">Xecades</a>
+            </div>
+            <div class="close no-select">×</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="draw.js"></script>
+    <script src="gen.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+@import url(https://fonts.loli.net/css2?family=EB+Garamond:ital,wght@0,400;0,500&family=Noto+Serif+SC:wght@300;400;500;700&display=swap);
+
+#app {
+    padding: 5rem 6rem;
+    color: #666;
+    font-family: "EB Garamond", "Noto Serif SC", source-han-serif-sc, 'source han serif sc', 'source han serif cn', 'source han serif tc', 'source han serif tw', 'source han serif', songti sc, microsoft yahei, serif;
+}
+
+a {
+    color: rgb(0, 93, 146);
+    opacity: .7;
+    transition: opacity .2s;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+rt {
+    font-weight: 500;
+    font-size: .7rem;
+}
+
+#title {
+    font-size: 3rem;
+    font-weight: 500;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+#text {
+    font-size: 1.2rem;
+    max-width: 650px;
+    line-height: 2.2rem;
+}
+
+#text p {
+    margin-bottom: .7rem;
+}
+
+#text p::before {
+    content: "　　";
+}
+
+#text p.bold {
+    font-weight: bold;
+}
+
+#text.list .sp p {
+    line-height: 1.4rem;
+}
+
+#text.list .sp p a {
+    display: inline-block;
+    min-width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+    #app {
+        padding: 2rem 3rem;
+    }
+
+    #title {
+        font-size: 2.5rem;
+    }
+
+    #text {
+        font-size: 1rem;
+    }
+    
+    #text.list .sp p {
+        line-height: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    #text.list .sp p a {
+        display: block;
+        width: unset;
+    }
+
+    #text.list p::before {
+        content: "";
+    }
+}

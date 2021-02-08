@@ -1,0 +1,10 @@
+async function loader() {
+    await loadCSS("/css/reset.css");
+    await loadCSS("/css/main.css");
+
+    await loadJS("https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js");
+    await loadJS("https://cdn.bootcdn.net/ajax/libs/vue-router/3.4.8/vue-router.min.js");
+    await loadJS("/js/script.js");
+}
+
+loader();

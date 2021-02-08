@@ -1,0 +1,28 @@
+.jsCanvas {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+#svg {
+    opacity: 0;
+    z-index: 0;
+}
+
+#dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: red;
+}
+
+@keyframes svg-animation {
+    from {
+        offset-distance: 0%;
+    }
+
+    to {
+        offset-distance: 100%;
+    }
+}
