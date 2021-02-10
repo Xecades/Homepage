@@ -39,7 +39,7 @@ var friend = {
     <div id="text" class="list">
         <p class="bold">有故事的人们。</p>
         <span class="sp">
-            <p><a href="https://zhr.wiki" target="_blank" rel="noopener noreferrer">vHenry</a>酷！</p>
+            <p><a href="https://zhr.wiki" target="_blank" rel="noopener noreferrer">vHenry</a>酷</p>
             <p><a href="https://comit.space/" target="_blank" rel="noopener noreferrer">Comit</a>der—</p>
             <p><a href="https://noisky.cn/" target="_blank" rel="noopener noreferrer">Noisky</a>The Magic World</p>
             <p><a href="https://one.wh0th.ink/" target="_blank" rel="noopener noreferrer">Hash</a>The one who think</p>
@@ -72,6 +72,26 @@ var about = {
 </span>`,
 };
 
+var memory = {
+    template: `
+<span>
+    <div id="title">回忆</div>
+    <div id="text" class="list">
+        <p class="bold">遥想公瑾当年……</p>
+        <span class="sp">
+            <p><a href='javascript:alert("石沉大海。")'>版本 #1</a></p>
+            <p><a href='https://v1.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #2</a></p>
+            <p><a href='https://v2.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #3</a></p>
+            <p><a href='https://v3.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #4</a></p>
+            <p><a href='https://v5.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #5</a></p>
+            <p><a href='javascript:alert("Under construction!")'>版本 #6</a></p>
+            <p><a href='/' target="_blank">版本 #7</a></p>
+        </span>
+        <p>点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>可以回到主页。</p>
+    </div>
+</span>`,
+};
+
 const router = new VueRouter({
     mode: "history",
     routes: [
@@ -90,6 +110,10 @@ const router = new VueRouter({
         {
             path: "/about",
             component: about,
+        },
+        {
+            path: "/memory",
+            component: memory,
         },
     ],
 });
@@ -116,6 +140,8 @@ console.clear();
 console.log("Copyright ©2019-2021 Xecades");
 console.log("Hey🎉，想看源码？");
 console.log("在这 => https://github.com/Xecades/Homepage/");
-console.log("如果你想使用本站源码，请注明作者为 Xecades，并附上相关链接，谢谢。");
+console.log(
+    "如果你想使用本站源码，请注明作者为 Xecades，并附上相关链接，谢谢。"
+);
 console.log("");
 console.log("如果要显示 DOM 边界（调试用），可以使用函数 toggleBorder()");
