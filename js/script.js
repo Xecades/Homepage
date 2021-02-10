@@ -1,4 +1,4 @@
-const Index = {
+var index = {
     template: `
 <span>
     <div id="title">你好。</div>
@@ -11,7 +11,7 @@ const Index = {
 </span>`,
 };
 
-const Laboratory = {
+var lab = {
     template: `
 <span>
     <div id="title">实验室</div>
@@ -32,20 +32,20 @@ const Laboratory = {
 </span>`,
 };
 
-const Friend = {
+var friend = {
     template: `
 <span>
     <div id="title">友人帐</div>
     <div id="text" class="list">
         <p class="bold">有故事的人们。</p>
         <span class="sp">
-            <p><a href="https://mivik.gitee.io/" target="_blank">Mivik</a>兴趣使然のProgrammer</p>
-            <p><a href="https://one.wh0th.ink/" target="_blank">Hash</a>The one who think</p>
-            <p><a href="https://noisky.cn/" target="_blank">Noisky</a>The Magic World</p>
-            <p><a href="https://denerate.ink/" target="_blank">DeNeRATe</a>Life is hard to cut off, Lifelong lovesickness</p>
+            <p><a href="https://zhr.wiki" target="_blank">vHenry</a>酷！</p>
             <p><a href="https://comit.space/" target="_blank">Comit</a>der—</p>
+            <p><a href="https://noisky.cn/" target="_blank">Noisky</a>The Magic World</p>
+            <p><a href="https://one.wh0th.ink/" target="_blank">Hash</a>The one who think</p>
+            <p><a href="https://mivik.gitee.io/" target="_blank">Mivik</a>兴趣使然のProgrammer</p>
+            <p><a href="https://denerate.ink/" target="_blank">DeNeRATe</a>Life is hard to cut off, Lifelong lovesickness</p>
             <p><a href="https://nekox.cn/" target="_blank">ArchyMoe</a></p>
-            <p><a href="https://zhr.wiki" target="_blank">vHenry</a></p>
             <p><a href="https://www.lemir3.red/" target="_blank">Lemir3</a></p>
             <p><a href="https://zsx6.com/" target="_blank">MMMsc0.618</a></p>
             <p><a href="https://socialzxy.github.io/" target="_blank">SocialZxy</a></p>
@@ -55,7 +55,7 @@ const Friend = {
 </span>`,
 };
 
-const About = {
+var about = {
     template: `
 <span>
     <div id="title">关于我，</div>
@@ -65,7 +65,7 @@ const About = {
         <p>他最不喜欢的是娱乐圈的歪风邪气，所以尽量不要和他聊这些东西。但这并不表明他是一个极为严肃的人，他只是不喜欢人云亦云、哗众取宠。</p>
         <p>他的初中是绵阳的一所普通<a href="http://mydcis.net/" target="_blank">中学</a>，高中是成都的一所普通<a href="http://www.cdqz.net/" target="_blank">高中</a>。从初中二年级到高中一年级，他是一名<ruby><rb>信竞选手</rb><rt>OIer</rt></ruby>，只不过那些知识他已经忘得差不多了。</p>
         <p>兴趣让他沉浸于有趣的知识不能自拔，他渴望知道更多、学习更多。他乐于创造，勤于思考，希望有一颗能发现美的眼睛。</p>
-        <p>或许你会好奇 Xecades 这个名字的由来，请君为我倾耳听：一个十年是 Decade，十个十年就是 Ten Decades，而 Ten 对应的罗马数字是 X，写在一起，就是 XDecades，去掉 D，就成了 Xecades。所以说，Xecades 是百年的意思。</p>
+        <p>或许你会好奇 Xecades 这个名字的由来：一个十年是 Decade，十个十年就是 Ten Decades，而 Ten 对应的罗马数字是 X，写在一起，就是 XDecades，去掉 D，就成了 Xecades。所以说，Xecades 是百年的意思。</p>
             <p>他的 QQ 是 2135174618；Telegram 账号是 <a href="https://t.me/Xecades" target="_blank">@Xecades</a>；Github 账号是 <a href="https://github.com/Xecades" target="_blank">@Xecades</a>；邮箱是 i#xecades.xyz。如果感兴趣，你可以通过这些渠道找到他。</p>
         <p>还有，回主页的传送门在<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>。</p>
     </div>
@@ -77,19 +77,19 @@ const router = new VueRouter({
     routes: [
         {
             path: "/",
-            component: Index,
+            component: index,
         },
         {
             path: "/lab",
-            component: Laboratory,
+            component: lab,
         },
         {
             path: "/friend",
-            component: Friend,
+            component: friend,
         },
         {
             path: "/about",
-            component: About,
+            component: about,
         },
     ],
 });
@@ -112,7 +112,10 @@ function toggleBorder() {
 
 toggleBorder();
 
+console.clear();
 console.log("Copyright ©2019-2021 Xecades");
-console.log("若要使用本站源码，请注明作者为 Xecades，并附上相关链接，谢谢。");
+console.log("Hey🎉，想看源码？");
+console.log("在这 => https://github.com/Xecades/Homepage/");
+console.log("如果你想使用本站源码，请注明作者为 Xecades，并附上相关链接，谢谢。");
 console.log("");
-console.log("若要显示 DOM 边界（调试用），请使用函数 toggleBorder()");
+console.log("如果要显示 DOM 边界（调试用），可以使用函数 toggleBorder()");

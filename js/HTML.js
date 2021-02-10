@@ -16,9 +16,3 @@ function loadCSS(url) {
         document.getElementsByTagName("head")[0].appendChild(link);
     });
 }
-
-function title(title) {
-    if (title)
-        document.getElementsByTagName("title")[0].innerHTML = title;
-    return document.getElementsByTagName("title")[0].innerHTML;
-}
