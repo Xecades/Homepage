@@ -42,10 +42,10 @@ const Friend = {
             <p><a href="https://mivik.gitee.io/" target="_blank">Mivik</a>兴趣使然のProgrammer</p>
             <p><a href="https://one.wh0th.ink/" target="_blank">Hash</a>The one who think</p>
             <p><a href="https://noisky.cn/" target="_blank">Noisky</a>The Magic World</p>
+            <p><a href="https://denerate.ink/" target="_blank">DeNeRATe</a>Life is hard to cut off, Lifelong lovesickness</p>
+            <p><a href="https://comit.space/" target="_blank">Comit</a>der—</p>
             <p><a href="https://nekox.cn/" target="_blank">ArchyMoe</a></p>
             <p><a href="https://zhr.wiki" target="_blank">vHenry</a></p>
-            <p><a href="https://denerate.ink/" target="_blank">DeNeRATe</a></p>
-            <p><a href="https://comit.space/" target="_blank">Comiting</a></p>
             <p><a href="https://www.lemir3.red/" target="_blank">Lemir3</a></p>
             <p><a href="https://zsx6.com/" target="_blank">MMMsc0.618</a></p>
             <p><a href="https://socialzxy.github.io/" target="_blank">SocialZxy</a></p>
