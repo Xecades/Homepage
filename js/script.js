@@ -44,6 +44,7 @@ var friend = {
             <p><a href="https://noisky.cn/" target="_blank" rel="noopener noreferrer">Noisky</a>The Magic World</p>
             <p><a href="https://one.wh0th.ink/" target="_blank" rel="noopener noreferrer">Hash</a>The one who think</p>
             <p><a href="https://mivik.gitee.io/" target="_blank" rel="noopener noreferrer">Mivik</a>兴趣使然のProgrammer</p>
+            <p><a href="https://mhuig.top/" target="_blank" rel="noopener noreferrer">MHuiG</a>Be yourself & Make a difference</p>
             <p><a href="https://denerate.ink/" target="_blank" rel="noopener noreferrer">DeNeRATe</a>Life is hard to cut off, Lifelong lovesickness</p>
             <p><a href="https://nekox.cn/" target="_blank" rel="noopener noreferrer">ArchyMoe</a></p>
             <p><a href="https://www.lemir3.red/" target="_blank" rel="noopener noreferrer">Lemir3</a></p>
