@@ -21,10 +21,10 @@ var lab = {
             <p><a href="https://ai.xecades.xyz/" target="_blank">Artificial Intelligence</a>BP 神经网络数字识别可视化</p>
             <p><a href="https://tiy.xecades.xyz/" target="_blank">TIY</a>在线运行 HTML 代码</p>
             <p><a href="https://nazo.xecades.xyz/" target="_blank">Nazo</a>自制网页解密游戏</p>
-            <p><a href="/lab/Fourier" target="_blank">Fourier Transform</a>傅里叶级数绘图可视化</p>
-            <p><a href="/lab/Cube" target="_blank">Cube Simulator</a>魔方模拟器</p>
-            <p><a href="/lab/Gravitation" target="_blank">Gravitation Simulator</a>二维星体运动模拟器</p>
-            <p><a href="/lab/CA" target="_blank">CA</a>元胞自动机生命游戏模拟器</p>
+            <p><a href="/lab/Fourier/" target="_blank">Fourier Transform</a>傅里叶级数绘图可视化</p>
+            <p><a href="/lab/Cube/" target="_blank">Cube Simulator</a>魔方模拟器</p>
+            <p><a href="/lab/Gravitation/" target="_blank">Gravitation Simulator</a>二维星体运动模拟器</p>
+            <p><a href="/lab/CA/" target="_blank">CA</a>元胞自动机生命游戏模拟器</p>
         </span>
 
         <p>对了，你可以点<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>回到主页。</p>
