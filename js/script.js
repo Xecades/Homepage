@@ -39,16 +39,16 @@ var friend = {
     <div id="text" class="list">
         <p class="bold">有故事的人们。</p>
         <span class="sp">
-            <p><a href="https://zhr.wiki" target="_blank">vHenry</a>酷！</p>
-            <p><a href="https://comit.space/" target="_blank">Comit</a>der—</p>
-            <p><a href="https://noisky.cn/" target="_blank">Noisky</a>The Magic World</p>
-            <p><a href="https://one.wh0th.ink/" target="_blank">Hash</a>The one who think</p>
-            <p><a href="https://mivik.gitee.io/" target="_blank">Mivik</a>兴趣使然のProgrammer</p>
-            <p><a href="https://denerate.ink/" target="_blank">DeNeRATe</a>Life is hard to cut off, Lifelong lovesickness</p>
-            <p><a href="https://nekox.cn/" target="_blank">ArchyMoe</a></p>
-            <p><a href="https://www.lemir3.red/" target="_blank">Lemir3</a></p>
-            <p><a href="https://zsx6.com/" target="_blank">MMMsc0.618</a></p>
-            <p><a href="https://socialzxy.github.io/" target="_blank">SocialZxy</a></p>
+            <p><a href="https://zhr.wiki" target="_blank" rel="noopener noreferrer">vHenry</a>酷！</p>
+            <p><a href="https://comit.space/" target="_blank" rel="noopener noreferrer">Comit</a>der—</p>
+            <p><a href="https://noisky.cn/" target="_blank" rel="noopener noreferrer">Noisky</a>The Magic World</p>
+            <p><a href="https://one.wh0th.ink/" target="_blank" rel="noopener noreferrer">Hash</a>The one who think</p>
+            <p><a href="https://mivik.gitee.io/" target="_blank" rel="noopener noreferrer">Mivik</a>兴趣使然のProgrammer</p>
+            <p><a href="https://denerate.ink/" target="_blank" rel="noopener noreferrer">DeNeRATe</a>Life is hard to cut off, Lifelong lovesickness</p>
+            <p><a href="https://nekox.cn/" target="_blank" rel="noopener noreferrer">ArchyMoe</a></p>
+            <p><a href="https://www.lemir3.red/" target="_blank" rel="noopener noreferrer">Lemir3</a></p>
+            <p><a href="https://zsx6.com/" target="_blank" rel="noopener noreferrer">MMMsc0.618</a></p>
+            <p><a href="https://socialzxy.github.io/" target="_blank" rel="noopener noreferrer">SocialZxy</a></p>
         </span>
         <p>除此之外，你可以点<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>回到主页。</p>
     </div>
@@ -63,10 +63,10 @@ var about = {
         <p class="bold">那个自称为 Xecades 的人。</p>
         <p>他出生于 00 后的第一个<ruby><rb>鸡年</rb><rt>2005</rt></ruby>，现居住在南方一个小县城。</p>
         <p>他最不喜欢的是娱乐圈的歪风邪气，所以尽量不要和他聊这些东西。但这并不表明他是一个极为严肃的人，他只是不喜欢人云亦云、哗众取宠。</p>
-        <p>他的初中是绵阳的一所普通<a href="http://mydcis.net/" target="_blank">中学</a>，高中是成都的一所普通<a href="http://www.cdqz.net/" target="_blank">高中</a>。从初中二年级到高中一年级，他是一名<ruby><rb>信竞选手</rb><rt>OIer</rt></ruby>，只不过那些知识他已经忘得差不多了。</p>
+        <p>他的初中是绵阳的一所普通<a href="http://mydcis.net/" target="_blank" rel="noopener noreferrer">中学</a>，高中是成都的一所普通<a href="http://www.cdqz.net/" target="_blank" rel="noopener noreferrer">高中</a>。从初中二年级到高中一年级，他是一名<ruby><rb>信竞选手</rb><rt>OIer</rt></ruby>，只不过那些知识他已经忘得差不多了。</p>
         <p>兴趣让他沉浸于有趣的知识不能自拔，他渴望知道更多、学习更多。他乐于创造，勤于思考，希望有一颗能发现美的眼睛。</p>
         <p>或许你会好奇 Xecades 这个名字的由来：一个十年是 Decade，十个十年就是 Ten Decades，而 Ten 对应的罗马数字是 X，写在一起，就是 XDecades，去掉 D，就成了 Xecades。所以说，Xecades 是百年的意思。</p>
-            <p>他的 QQ 是 2135174618；Telegram 账号是 <a href="https://t.me/Xecades" target="_blank">@Xecades</a>；Github 账号是 <a href="https://github.com/Xecades" target="_blank">@Xecades</a>；邮箱是 i#xecades.xyz。如果感兴趣，你可以通过这些渠道找到他。</p>
+            <p>他的 QQ 是 2135174618；Telegram 账号是 <a href="https://t.me/Xecades" target="_blank" rel="noopener noreferrer">@Xecades</a>；Github 账号是 <a href="https://github.com/Xecades" target="_blank" rel="noopener noreferrer">@Xecades</a>；邮箱是 i#xecades.xyz。如果感兴趣，你可以通过这些渠道找到他。</p>
         <p>还有，回主页的传送门在<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>。</p>
     </div>
 </span>`,
