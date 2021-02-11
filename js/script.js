@@ -100,7 +100,7 @@ var error = {
     <div id="text">
         <p class="bold">抱歉，</p>
         <p>请检查你访问的网址是否正确，</p>
-        <p>或者点击<a href="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></a>返回主页。</p>
+        <p>或者点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>返回主页。</p>
     </div>
 </span>`,
 };
