@@ -93,6 +93,18 @@ var memory = {
 </span>`,
 };
 
+var error = {
+    template: `
+<span>
+    <div id="title">404 Not Found</div>
+    <div id="text">
+        <p class="bold">抱歉，</p>
+        <p>请检查你访问的网址是否正确，</p>
+        <p>或者点击<a href="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></a>返回主页。</p>
+    </div>
+</span>`,
+};
+
 const router = new VueRouter({
     mode: "history",
     routes: [
@@ -116,6 +128,10 @@ const router = new VueRouter({
             path: "/memory",
             component: memory,
         },
+        {
+            path: "*",
+            component: error,
+        },
     ],
 });
 
@@ -135,20 +151,8 @@ function toggleBorder() {
     localStorage.setItem("isBoundaryDisplayed", CHK);
 }
 
-function handle404() {
-    window.is404 &&
-        (document.getElementById("app").innerHTML = `
-    <div id="title">404 Not Found</div>
-    <div id="text">
-        <p class="bold">抱歉，</p>
-        <p>请检查你访问的网址是否正确，</p>
-        <p>或者点击<a href="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></a>返回主页。</p>
-    </div>`);
-}
-
 (() => {
     toggleBorder();
-    handle404();
 
     console.clear();
     console.log("Copyright ©2019-2021 Xecades");
