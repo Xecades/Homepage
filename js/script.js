@@ -135,14 +135,28 @@ function toggleBorder() {
     localStorage.setItem("isBoundaryDisplayed", CHK);
 }
 
-toggleBorder();
+function handle404() {
+    window.is404 &&
+        (document.getElementById("app").innerHTML = `
+    <div id="title">404 Not Found</div>
+    <div id="text">
+        <p class="bold">抱歉，</p>
+        <p>请检查你访问的网址是否正确，</p>
+        <p>或者点击<a href="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></a>返回主页。</p>
+    </div>`);
+}
 
-console.clear();
-console.log("Copyright ©2019-2021 Xecades");
-console.log("Hey🎉，想看源码？");
-console.log("在这 => https://github.com/Xecades/Homepage/");
-console.log(
-    "如果你想使用本站源码，请注明作者为 Xecades，并附上相关链接，谢谢。"
-);
-console.log("");
-console.log("如果要显示 DOM 边界（调试用），可以使用函数 toggleBorder()");
+(() => {
+    toggleBorder();
+    handle404();
+
+    console.clear();
+    console.log("Copyright ©2019-2021 Xecades");
+    console.log("Hey🎉，想看源码？");
+    console.log("在这 => https://github.com/Xecades/Homepage/");
+    console.log(
+        "如果你想使用本站源码，请注明作者为 Xecades，并附上相关链接，谢谢。"
+    );
+    console.log("");
+    console.log("如果要显示 DOM 边界（调试用），可以使用函数 toggleBorder()");
+})();
