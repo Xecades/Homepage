@@ -1,0 +1,170 @@
+#app {
+    width: 100%;
+    font-family: source-han-serif-sc, "source han serif sc",
+        "source han serif cn", "source han serif tc", "source han serif tw",
+        "source han serif", songti sc, microsoft yahei, serif;
+    color: #333;
+    background-color: #eee;
+}
+
+#header,
+#desc,
+#banner,
+#miracle,
+#gallery,
+#contact,
+#footer {
+    width: 100%;
+    display: inline-block;
+    padding: 0 3rem;
+}
+
+#header .title {
+    font-size: 10rem;
+    line-height: 10rem;
+    height: 10rem;
+    width: 100%;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+#header .subtitle {
+    font-size: 2.5rem;
+    line-height: 7rem;
+    height: 7rem;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+#header .logo {
+    display: inline-block;
+    width: 100%;
+    height: 17rem;
+    text-align: right;
+}
+
+#header .logo img {
+    border-radius: 50%;
+    margin: 3rem;
+    height: 6.5rem;
+    box-shadow: 11px 11px 29px #ababab, -11px -11px 29px #ffffff;
+}
+
+#desc {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#desc .line {
+    width: 16rem;
+    margin: 3rem auto;
+    margin-bottom: 2rem;
+    height: 0.3rem;
+    border-radius: 5px;
+    background-color: #777;
+}
+
+#desc .text {
+    font-size: 1.5rem;
+    line-height: 4rem;
+    height: 4rem;
+    margin-bottom: 3rem;
+    vertical-align: middle;
+}
+
+#banner {
+    width: 100vw;
+    padding: 0;
+    overflow: hidden;
+}
+
+#banner .item {
+    display: inline-block;
+    background-color: #fff;
+    height: 6.5rem;
+    line-height: 6rem;
+    padding: 0.25rem 15rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    font-variant-caps: petite-caps;
+    white-space: nowrap;
+    position: relative;
+    margin: 2rem;
+}
+
+#miracle {
+    font-size: 5rem;
+    font-weight: bolder;
+    margin: 8rem 0;
+}
+
+#miracle .text {
+    line-height: 9rem;
+    height: 9rem;
+}
+
+#miracle .letter {
+    display: inline-block;
+}
+
+#gallery {
+    height: 200vh;
+}
+
+#gallery .text {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    width: 50%;
+    display: inline-block;
+    top: 50%;
+    position: relative;
+    transform: translate(0, -50%);
+}
+
+#gallery .text p {
+    padding: 1rem;
+}
+
+#gallery .photo {
+    width: 35rem;
+    height: 100vh;
+    padding-top: calc((100vh - 35rem) / 2);
+}
+
+#gallery .photo img {
+    width: 35rem;
+    height: 35rem;
+    filter: brightness(0.8);
+}
+
+#contact .list {
+    width: 100%;
+    text-align: center;
+}
+
+#contact .list li {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin: 2rem 0.5rem;
+    transition: color 0.4s;
+}
+
+#contact .list li:hover {
+    color: #666;
+}
+
+#footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    height: 50vh;
+}
+
+#footer .copy {
+    height: 4rem;
+    line-height: 4rem;
+}

@@ -22,6 +22,7 @@ var lab = {
             <p><a href="https://tiy.xecades.xyz/" target="_blank">TIY</a>在线运行 HTML 代码</p>
             <p><a href="https://nazo.xecades.xyz/" target="_blank">Nazo</a>自制网页解密游戏</p>
             <p><a href="/lab/Fourier/" target="_blank">Fourier Transform</a>傅里叶级数绘图可视化</p>
+            <p><a href="/lab/Scroll/" target="_blank">Scroll</a>Scroll 页面设计</p>
             <p><a href="/lab/Cube/" target="_blank">Cube Simulator</a>魔方模拟器</p>
             <p><a href="/lab/Gravitation/" target="_blank">Gravitation Simulator</a>二维星体运动模拟器</p>
             <p><a href="/lab/CA/" target="_blank">CA</a>元胞自动机生命游戏模拟器</p>
