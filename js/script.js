@@ -106,6 +106,18 @@ var error = {
 </span>`,
 };
 
+var mobile = {
+    template: `
+<span>
+    <div id="title">Mobile Warning</div>
+    <div id="text">
+        <p class="bold">抱歉，</p>
+        <p>你访问的网页不支持移动端，</p>
+        <p>请点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>返回主页。</p>
+    </div>
+</span>`,
+};
+
 const router = new VueRouter({
     mode: "history",
     routes: [
@@ -128,6 +140,10 @@ const router = new VueRouter({
         {
             path: "/memory",
             component: memory,
+        },
+        {
+            path: "/mobile",
+            component: mobile,
         },
         {
             path: "*",
