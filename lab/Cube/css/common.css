@@ -22,7 +22,7 @@ html {
 
 @font-face {
     font-family: JetBrains;
-    src: url("../lib/JetBrainsMono.ttf")
+    src: url(".lib/JetBrainsMono.ttf")
 }
 
 a {

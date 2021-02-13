@@ -14,8 +14,8 @@
  * change if the page is re-opened later.
  */
 
-// #import {assert} from './assert.m.js';
-// #import {parseHtmlSubset} from './parse_html_subset.m.js';
+// #import {assert} from 'assert.m.js';
+// #import {parseHtmlSubset} from 'parse_html_subset.m.js';
 
 /**
  * @typedef {{

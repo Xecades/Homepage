@@ -1,7 +1,7 @@
 var imgNum = 36;
 
 function getBGSrc(mark) {
-    return `./img/${mark}.jpg`;
+    return `img/${mark}.jpg`;
 }
 
 function refreshBG(mark = Math.ceil(Math.random() * imgNum)) {
