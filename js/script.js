@@ -40,17 +40,13 @@ var friend = {
     <div id="text" class="list">
         <p class="bold">有故事的人们。</p>
         <span class="sp">
-            <p><a href="https://zhr.wiki" target="_blank" rel="noopener noreferrer">vHenry</a>酷</p>
+            <p><a href="https://zhr.wiki/" target="_blank" rel="noopener noreferrer">vHenry</a>酷</p>
             <p><a href="https://comit.space/" target="_blank" rel="noopener noreferrer">Comit</a>der—</p>
             <p><a href="https://noisky.cn/" target="_blank" rel="noopener noreferrer">Noisky</a>The Magic World</p>
             <p><a href="https://one.wh0th.ink/" target="_blank" rel="noopener noreferrer">Hash</a>The one who think</p>
             <p><a href="https://mivik.gitee.io/" target="_blank" rel="noopener noreferrer">Mivik</a>兴趣使然のProgrammer</p>
-            <p><a href="https://mhuig.top/" target="_blank" rel="noopener noreferrer">MHuiG</a>Be yourself & Make a difference</p>
             <p><a href="https://denerate.ink/" target="_blank" rel="noopener noreferrer">DeNeRATe</a>Life is hard to cut off, Lifelong lovesickness</p>
             <p><a href="https://nekox.cn/" target="_blank" rel="noopener noreferrer">ArchyMoe</a></p>
-            <p><a href="https://www.lemir3.red/" target="_blank" rel="noopener noreferrer">Lemir3</a></p>
-            <p><a href="https://zsx6.com/" target="_blank" rel="noopener noreferrer">MMMsc0.618</a></p>
-            <p><a href="https://socialzxy.github.io/" target="_blank" rel="noopener noreferrer">SocialZxy</a></p>
         </span>
         <p>除此之外，你可以点<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>回到主页。</p>
     </div>
