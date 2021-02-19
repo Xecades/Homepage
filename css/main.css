@@ -1,9 +1,9 @@
-@import url(https://fonts.loli.net/css2?family=EB+Garamond:ital,wght@0,400;0,500&family=Noto+Serif+SC:wght@300;400;500;700&display=swap);
+@import url(https://fonts.loli.net/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 
 #app {
     padding: 5rem 6rem;
     color: #666;
-    font-family: "EB Garamond", "Noto Serif SC", source-han-serif-sc, 'source han serif sc', 'source han serif cn', 'source han serif tc', 'source han serif tw', 'source han serif', songti sc, microsoft yahei, serif;
+    font-family: "EB Garamond", source-han-serif-sc, 'source han serif sc', 'source han serif cn', 'source han serif tc', 'source han serif tw', 'source han serif', songti sc, microsoft yahei, serif;
 }
 
 a {
