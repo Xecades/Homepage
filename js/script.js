@@ -9,6 +9,9 @@ var index = {
         <p>我会在<a href="https://blog.xecades.xyz/"><ruby><rb>博客</rb><rt>/blog</rt></ruby></a>上记录我感兴趣的内容。有时，我会开发一些好玩的<router-link to="/lab"><ruby><rb>项目</rb><rt>/lab</rt></ruby></router-link>。我也喜欢邂逅<router-link to="/friend"><ruby><rb>有趣的灵魂</rb><rt>/friend</rt></ruby></router-link>，他们给了我很多新的思考。</p>
     </div>
 </span>`,
+    mounted() {
+        CURSOR.refresh();
+    },
 };
 
 var lab = {
@@ -31,6 +34,9 @@ var lab = {
         <p>对了，你可以点<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>回到主页。</p>
     </div>
 </span>`,
+    mounted() {
+        CURSOR.refresh();
+    },
 };
 
 var friend = {
@@ -51,6 +57,9 @@ var friend = {
         <p>除此之外，你可以点<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>回到主页。</p>
     </div>
 </span>`,
+    mounted() {
+        CURSOR.refresh();
+    },
 };
 
 var about = {
@@ -68,6 +77,9 @@ var about = {
         <p>还有，回主页的传送门在<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>。</p>
     </div>
 </span>`,
+    mounted() {
+        CURSOR.refresh();
+    },
 };
 
 var memory = {
@@ -88,6 +100,9 @@ var memory = {
         <p>点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>可以回到主页。</p>
     </div>
 </span>`,
+    mounted() {
+        CURSOR.refresh();
+    },
 };
 
 var error = {
@@ -100,6 +115,9 @@ var error = {
         <p>或者点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>返回主页。</p>
     </div>
 </span>`,
+    mounted() {
+        CURSOR.refresh();
+    },
 };
 
 var mobile = {
@@ -112,6 +130,9 @@ var mobile = {
         <p>请点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>返回主页。</p>
     </div>
 </span>`,
+    mounted() {
+        CURSOR.refresh();
+    },
 };
 
 const router = new VueRouter({
