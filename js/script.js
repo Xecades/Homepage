@@ -73,7 +73,7 @@ var about = {
         <p>他的初中是绵阳的一所普通<a href="http://mydcis.net/" target="_blank" rel="noopener noreferrer">中学</a>，高中是成都的一所普通<a href="http://www.cdqz.net/" target="_blank" rel="noopener noreferrer">高中</a>。从初中二年级到高中一年级，他是一名<ruby><rb>信竞选手</rb><rt>OIer</rt></ruby>，只不过那些知识他已经忘得差不多了。</p>
         <p>兴趣让他沉浸于有趣的知识不能自拔，他渴望知道更多、学习更多。他乐于创造，勤于思考，希望有一颗能发现美的眼睛。</p>
         <p>或许你会好奇 Xecades 这个名字的由来：一个十年是 Decade，十个十年就是 Ten Decades，而 Ten 对应的罗马数字是 X，写在一起，就是 XDecades，去掉 D，就成了 Xecades。所以说，Xecades 是百年的意思。</p>
-            <p>他的 QQ 是 2135174618；Telegram 账号是 <a href="https://t.me/Xecades" target="_blank" rel="noopener noreferrer">@Xecades</a>；Github 账号是 <a href="https://github.com/Xecades" target="_blank" rel="noopener noreferrer">@Xecades</a>；邮箱是 i#xecades.xyz。如果感兴趣，你可以通过这些渠道找到他。</p>
+        <p>他的 QQ 是 2135174618；Telegram 账号是 <a href="https://t.me/Xecades" target="_blank" rel="noopener noreferrer">@Xecades</a>；Github 账号是 <a href="https://github.com/Xecades" target="_blank" rel="noopener noreferrer">@Xecades</a>；邮箱是 i#xecades.xyz。如果感兴趣，你可以通过这些渠道找到他。</p>
         <p>还有，回主页的传送门在<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>。</p>
     </div>
 </span>`,
@@ -89,13 +89,14 @@ var memory = {
     <div id="text" class="list">
         <p class="bold">遥想公瑾当年……</p>
         <span class="sp">
-            <p><a href='javascript:alert("石沉大海。")'>版本 #1</a></p>
+            <p><a href='javascript:alert("石沉大海")'>版本 #1</a></p>
             <p><a href='https://v1.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #2</a></p>
             <p><a href='https://v2.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #3</a></p>
             <p><a href='https://v3.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #4</a></p>
             <p><a href='https://v5.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #5</a></p>
-            <p><a href='javascript:alert("Under construction!")'>版本 #6</a></p>
-            <p><a href='/' target="_blank">版本 #7</a></p>
+            <p><a href='javascript:alert("Under construction")'>版本 #6</a></p>
+            <p><a href='javascript:alert("Under construction")'>版本 #7</a></p>
+            <p><a href='/' target="_blank">版本 #8</a></p>
         </span>
         <p>点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>可以回到主页。</p>
     </div>
