@@ -23,6 +23,7 @@ var lab = {
         <span class="sp">
             <p><a href="https://ai.xecades.xyz/" target="_blank">Artificial Intelligence</a>BP 神经网络数字识别可视化</p>
             <p><a href="https://tiy.xecades.xyz/" target="_blank">TIY</a>在线运行 HTML 代码</p>
+            <p><a href="https://api.xecades.xyz/" target="_blank">Postcard API</a>个人身份卡片 API + 生成器</p>
             <p><a href="https://nazo.xecades.xyz/" target="_blank">Nazo</a>自制网页解密游戏</p>
             <p><a href="/lab/Fourier/" target="_blank">Fourier Transform</a>傅里叶级数绘图可视化</p>
             <p><a href="/lab/Scroll/" target="_blank">Scroll</a>Scroll 页面设计</p>
