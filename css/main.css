@@ -3,7 +3,7 @@
 #app {
     padding: 5rem 6rem;
     color: #666;
-    font-family: "EB Garamond", source-han-serif-sc, 'source han serif sc', 'source han serif cn', 'source han serif tc', 'source han serif tw', 'source han serif', "simsun", songti sc, microsoft yahei, serif;
+    font-family: "EB Garamond", source-han-serif-sc, "source han serif sc", "source han serif cn", "source han serif tc", "source han serif tw", "source han serif", "simsun", songti sc, microsoft yahei, serif;
 }
 
 a {
@@ -56,8 +56,18 @@ rt {
 }
 
 @media screen and (max-width: 600px) {
+    @font-face {
+        font-family: "Noto Serif SC";
+        src:url("/asset/NotoSerifSC.otf");
+    }
+
+    #cursor {
+        display: none !important;
+    }
+
     #app {
         padding: 2rem 3rem;
+        font-family: "EB Garamond", "Noto Serif SC", source-han-serif-sc, "source han serif sc", "source han serif cn", "source han serif tc", "source han serif tw", "source han serif", "simsun", songti sc, microsoft yahei, serif !important;
     }
 
     #title {
