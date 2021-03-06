@@ -1,4 +1,5 @@
 @import url(https://fonts.loli.net/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap);
+@import url(https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap) screen and (max-width: 600px);
 
 #app {
     padding: 5rem 6rem;
@@ -14,6 +15,10 @@ a {
 
 a:hover {
     opacity: 1;
+}
+
+a:active {
+    opacity: .9;
 }
 
 rt {
@@ -62,6 +67,7 @@ rt {
 
     #app {
         padding: 2rem 3rem;
+        font-family: "EB Garamond", "Noto Serif SC", source-han-serif-sc, "source han serif sc", "source han serif cn", "source han serif tc", "source han serif tw", "source han serif", "simsun", songti sc, microsoft yahei, serif;
     }
 
     #title {
