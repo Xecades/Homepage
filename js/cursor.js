@@ -14,7 +14,7 @@ const getStyle = (el, attr) => {
 class Cursor {
     constructor() {
         this.pos = {curr: null, prev: null};
-        this.pt = [];
+        this.pointer = [];
         this.create();
         this.init();
         this.render();
@@ -36,25 +36,25 @@ class Cursor {
         var el = document.getElementsByTagName('*');
         for (let i = 0; i < el.length; i++)
             if (getStyle(el[i], "cursor") == "pointer")
-                this.pt.push(el[i].outerHTML);
+                this.pointer.push(el[i].outerHTML);
         document.body.appendChild((this.scr = document.createElement("style")));
         this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' width='8px' height='8px'><circle cx='4' cy='4' r='4' opacity='.5'/></svg>") 4 4, auto !important}`;
     }
 
     refresh() {
         this.scr.remove();
-        this.cursor.classList.remove("hover");
+        this.cursor.classList.remove("pointer");
         this.cursor.classList.remove("active");
         this.pos = {curr: null, prev: null};
-        this.pt = [];
+        this.pointer = [];
         this.create();
         this.init();
         this.render();
     }
 
     init() {
-        document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");
-        document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");
+        document.onmouseover  = e => this.pointer.includes(e.target.outerHTML) && this.cursor.classList.add("pointer");
+        document.onmouseout   = e => this.pointer.includes(e.target.outerHTML) && this.cursor.classList.remove("pointer");
         document.onmousemove  = e => {(this.pos.curr == null) && this.move(e.clientX - 8, e.clientY - 8); this.pos.curr = {x: e.clientX - 8, y: e.clientY - 8}; this.cursor.classList.remove("hidden");};
         document.onmouseenter = e => this.cursor.classList.remove("hidden");
         document.onmouseleave = e => this.cursor.classList.add("hidden");

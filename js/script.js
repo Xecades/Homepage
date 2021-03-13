@@ -6,7 +6,7 @@ var index = {
         <p class="bold">我叫 Xecades，</p>
         <p><ruby><rb>“Xecades”</rb><rt>Used Since 2019</rt></ruby> 是我广泛使用的网名，通过键入它，你可以在互联网上找到所有我的<router-link to="/about"><ruby><rb>踪迹</rb><rt>/about</rt></ruby></router-link>。</p>
         <p>我现在是一名高二学生，在<a href="http://www.cdqz.net/" target="_blank" rel="noopener noreferrer">某不知名高中</a>学习<ruby><rb>信息学竞赛</rb><rt>AFO Since 2020</rt></ruby>和文化课。如果你恰好也是这个学校的学生，欢迎来高 2019 级 12 班找我。</p>
-        <p>我会在<a href="https://blog.xecades.xyz/"><ruby><rb>博客</rb><rt>/blog</rt></ruby></a>上记录我感兴趣的内容。有时，我会开发一些好玩的<router-link to="/lab"><ruby><rb>项目</rb><rt>/lab</rt></ruby></router-link>。我也喜欢邂逅<router-link to="/friend"><ruby><rb>有趣的灵魂</rb><rt>/friend</rt></ruby></router-link>，他们给了我很多新的思考。</p>
+        <p>我会在<a href="https://blog.xecades.xyz/"><ruby><rb>博客</rb><rt>/blog</rt></ruby></a>上记录我感兴趣的内容。有时，我会开发一些好玩的<router-link to="/lab"><ruby><rb>项目</rb><rt>/lab</rt></ruby></router-link>。我喜欢邂逅<router-link to="/friend"><ruby><rb>有趣的灵魂</rb><rt>/friend</rt></ruby></router-link>，他们给了我很多新的思考。</p>
     </div>
 </span>`,
     mounted() {
@@ -88,7 +88,7 @@ var memory = {
 <span>
     <div id="title">回忆</div>
     <div id="text" class="list">
-        <p class="bold">遥想公瑾当年……</p>
+        <p class="bold">想当年……</p>
         <span class="sp">
             <p><a href='javascript:alert("石沉大海")'>版本 #1</a></p>
             <p><a href='https://v1.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #2</a></p>
