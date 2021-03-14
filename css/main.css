@@ -1,6 +1,9 @@
 @import url(https://fonts.loli.net/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap);
-@import url(https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap)
-    screen and (max-width: 600px);
+@import url(https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@400;700&display=swap) screen and (max-width: 600px);
+
+html, body {
+    overflow-x: hidden;
+}
 
 #app {
     color: #666;

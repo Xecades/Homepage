@@ -5,9 +5,7 @@ var os = function () {
         isAndroid = /(?:Android)/.test(ua),
         isFireFox = /(?:Firefox)/.test(ua),
         isChrome = /(?:Chrome|CriOS)/.test(ua),
-        isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (
-            isFireFox &&
-            /(?:Tablet)/.test(ua)),
+        isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
         isPhone = /(?:iPhone)/.test(ua) && !isTablet,
         isPc = !isPhone && !isAndroid && !isSymbian;
     return {
@@ -18,6 +16,5 @@ var os = function () {
     };
 }();
 
-if (os.isAndroid || os.isPhone) {
+if (os.isAndroid || os.isPhone)
     window.location.href = "/mobile";
-}
