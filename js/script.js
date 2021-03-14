@@ -75,7 +75,7 @@ var about = {
         <p>兴趣让他沉浸于有趣的知识不能自拔，他渴望知道更多、学习更多。他乐于创造，勤于思考，希望有一颗能发现美的眼睛。</p>
         <p>或许你会好奇 Xecades 这个名字的由来：一个十年是 Decade，十个十年就是 Ten Decades，而 Ten 对应的罗马数字是 X，写在一起，就是 XDecades，去掉 D，就成了 Xecades。所以说，Xecades 是百年的意思。</p>
         <p>他的 QQ 是 2135174618；Telegram 账号是 <a href="https://t.me/Xecades" target="_blank" rel="noopener noreferrer">@Xecades</a>；Github 账号是 <a href="https://github.com/Xecades" target="_blank" rel="noopener noreferrer">@Xecades</a>；邮箱是 i#xecades.xyz。如果感兴趣，你可以通过这些渠道找到他。</p>
-        <p>还有，回主页的传送门在<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>。</p>
+        <p>回主页的传送门在<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>。</p>
     </div>
 </span>`,
     mounted() {
@@ -88,7 +88,7 @@ var memory = {
 <span>
     <div id="title">回忆</div>
     <div id="text" class="list">
-        <p class="bold">想当年……</p>
+        <p class="bold">那时……</p>
         <span class="sp">
             <p><a href='javascript:alert("石沉大海")'>版本 #1</a></p>
             <p><a href='https://v1.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #2</a></p>
@@ -169,6 +169,13 @@ const router = new VueRouter({
             component: error,
         },
     ],
+    scrollBehavior(to, from, savedPosition) {
+        return {
+            x: 0, y: 0,
+            behavior: 'smooth',
+        }
+    }
+
 });
 
 const app = new Vue({
@@ -192,11 +199,10 @@ function toggleBorder() {
 
     console.clear();
     console.log("Copyright ©2019-2021 Xecades");
+    console.log("----------------------------");
     console.log("Hey🎉，想看源码？");
     console.log("在这 => https://github.com/Xecades/Homepage/");
-    console.log(
-        "如果你想使用本站源码，请注明作者为 Xecades，并附上相关链接，谢谢。"
-    );
+    console.log("如果你想使用本站源码，请注明作者为 Xecades，并附上相关链接，谢谢。");
     console.log("");
-    console.log("如果要显示 DOM 边界（调试用），可以使用函数 toggleBorder()");
+    console.log("调试时如果要显示 DOM 边界，可以使用函数 toggleBorder()");
 })();
