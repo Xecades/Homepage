@@ -9,6 +9,10 @@ class point {
         return `(${this.x}, ${this.y})`;
     }
 
+    get r() {
+        return Math.sqrt(this.x * this.x + this.y * this.y);
+    }
+
     sync() {
         this.real = this.x;
         this.imag = this.y;
@@ -23,23 +27,22 @@ class point {
     }
 
     minus(p) {
-        return this.add(p.apply(x => -x));
+        return this.add(p.apply((x) => -x));
     }
 
     multiply(p) {
         if (p instanceof complex || p instanceof point)
-            return new complex(this.x * p.x - this.y * p.y, this.y * p.x + this.x * p.y);
-        return this.apply(x => p * x);
+            return new complex(
+                this.x * p.x - this.y * p.y,
+                this.y * p.x + this.x * p.y
+            );
+        return this.apply((x) => p * x);
     }
-};
+}
 
 class complex extends point {
     constructor(real, imag) {
         super(real, imag);
-    }
-
-    get r() {
-        return Math.sqrt(this.real * this.real + this.imag * this.imag);
     }
 
     get theta() {
@@ -56,17 +59,20 @@ class complex extends point {
 
     multiply(p) {
         if (p instanceof complex || p instanceof point)
-            return new complex(this.real * p.real - this.imag * p.imag, this.imag * p.real + this.real * p.imag);
-        return this.apply(x => p * x);
+            return new complex(
+                this.real * p.real - this.imag * p.imag,
+                this.imag * p.real + this.real * p.imag
+            );
+        return this.apply((x) => p * x);
     }
-};
+}
 
 function dist(a, b) {
     return Math.sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
 }
 
-function loadPageVar(sVar) {
-    return decodeURI(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURI(sVar).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+function $var(key) {
+    return decodeURI(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURI(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
 }
 
 const zero = new point(0, 0);
