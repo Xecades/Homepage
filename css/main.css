@@ -62,13 +62,42 @@ rt {
     font-weight: bold;
 }
 
-#text.list .sp p {
+#text.list .list p {
     line-height: 1.4rem;
 }
 
-#text.list .sp p a {
+#text.list .list p a {
     display: inline-block;
-    min-width: 40%;
+    min-width: 150px;
+}
+
+#text.list .timeline .year {
+    display: block;
+    margin-bottom: 4rem;
+}
+
+#text.list .timeline .year p {
+    line-height: 1.6rem;
+    height: 1.6rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#text.list .timeline .year p span {
+    display: inline-block;
+    min-width: 30%;
+}
+
+#text.list .timeline .year .date {
+    z-index: -1;
+    position: absolute;
+	font-size: 5rem;
+	font-weight: bold;
+	color: #ededed;
+	transform: rotate(-90deg) translate(-3.2rem, -5.5rem);
+	height: 5rem;
+	line-height: 5rem;
 }
 
 .fade-enter-active {
@@ -109,14 +138,27 @@ rt {
         font-size: 1rem;
     }
 
-    #text.list .sp p {
+    #text.list .list p {
         line-height: 1.8rem;
         margin-bottom: 2rem;
     }
 
-    #text.list .sp p a {
+    #text.list .list p a {
         display: block;
         width: unset;
+    }
+
+    #text.list .timeline .year p {
+        margin-left: 3.6rem;
+        height: unset;
+        overflow: unset;
+        white-space: unset;
+        text-overflow: unset;
+        text-indent: -1rem;
+    }
+
+    #text.list .timeline .year p span {
+        display: none;
     }
 
     #text.list p::before {

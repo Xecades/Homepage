@@ -6,7 +6,7 @@ var index = {
         <p class="bold">我叫 Xecades，</p>
         <p><ruby><rb>“Xecades”</rb><rt>Used Since 2019</rt></ruby> 是我广泛使用的网名，通过键入它，你可以在互联网上找到所有我的<router-link to="/about"><ruby><rb>踪迹</rb><rt>/about</rt></ruby></router-link>。</p>
         <p>我现在是一名高二学生，在<a href="http://www.cdqz.net/" target="_blank" rel="noopener noreferrer">某不知名高中</a>学习<ruby><rb>信息学竞赛</rb><rt>AFO Since 2020</rt></ruby>和文化课。如果你恰好也是这个学校的学生，欢迎来高 2019 级 12 班找我。</p>
-        <p>我会在<a href="https://blog.xecades.xyz/"><ruby><rb>博客</rb><rt>/blog</rt></ruby></a>上记录我感兴趣的内容。有时，我会开发一些好玩的<router-link to="/lab"><ruby><rb>项目</rb><rt>/lab</rt></ruby></router-link>。我喜欢邂逅<router-link to="/friend"><ruby><rb>有趣的灵魂</rb><rt>/friend</rt></ruby></router-link>，他们给了我很多新的思考。</p>
+        <p>我会在<a href="https://blog.xecades.xyz/"><ruby><rb>博客</rb><rt>/blog</rt></ruby></a>上记录我感兴趣的内容。有时，我会开发一些好玩的<router-link to="/lab"><ruby><rb>项目</rb><rt>/lab</rt></ruby></router-link>。我喜欢邂逅<router-link to="/friend"><ruby><rb>有趣的灵魂</rb><rt>/friend</rt></ruby></router-link>，他们给了我很多新的思考，伴随着我的<router-link to="/timeline"><ruby><rb>成长</rb><rt>/timeline</rt></ruby></router-link>。</p>
     </div>
 </span>`,
     mounted() {
@@ -20,7 +20,7 @@ var lab = {
     <div id="title">实验室</div>
     <div id="text" class="list">
         <p class="bold">有一些好玩的东西。</p>
-        <span class="sp">
+        <span class="list">
             <p><a href="https://ai.xecades.xyz/" target="_blank">Artificial Intelligence</a>BP 神经网络数字识别可视化</p>
             <p><a href="https://tiy.xecades.xyz/" target="_blank">TIY</a>在线运行 HTML 代码</p>
             <p><a href="https://api.xecades.xyz/" target="_blank">Postcard API</a>个人身份卡片 API + 生成器</p>
@@ -46,7 +46,7 @@ var friend = {
     <div id="title">友人帐</div>
     <div id="text" class="list">
         <p class="bold">有故事的人们。</p>
-        <span class="sp">
+        <span class="list">
             <p><a href="https://zhr.wiki/" target="_blank" rel="noopener noreferrer">vHenry</a>酷</p>
             <p><a href="https://comit.space/" target="_blank" rel="noopener noreferrer">Comit</a>der—</p>
             <p><a href="https://noisky.cn/" target="_blank" rel="noopener noreferrer">Noisky</a>The Magic World</p>
@@ -89,7 +89,7 @@ var memory = {
     <div id="title">回忆</div>
     <div id="text" class="list">
         <p class="bold">那时……</p>
-        <span class="sp">
+        <span class="list">
             <p><a href='javascript:alert("石沉大海")'>版本 #1</a></p>
             <p><a href='https://v1.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #2</a></p>
             <p><a href='https://v2.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #3</a></p>
@@ -98,6 +98,81 @@ var memory = {
             <p><a href='javascript:alert("Under construction")'>版本 #6</a></p>
             <p><a href='javascript:alert("Under construction")'>版本 #7</a></p>
             <p><a href='/' target="_blank">版本 #8</a></p>
+        </span>
+        <p>点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>可以回到主页。</p>
+    </div>
+</span>`,
+    mounted() {
+        CURSOR.refresh();
+    },
+};
+
+var timeline = {
+    template: `
+<span>
+    <div id="title">时光</div>
+    <div id="text" class="list">
+        <p class="bold">Epic of my own.</p>
+        <span class="timeline">
+            <span class="year">
+                <div class="date">2016</div>
+                <p><span>上半年</span>接触 C</p>
+                <p><span>9 月 19 日 13:53</span>注册第一个OJ openjudge</p>
+                <p><span>9 月 29 日</span>提交第一个程序 超级玛丽 (WA)</p>
+                <p><span>9 月 29 日</span>第一次 AC 题目</p>
+                <p><span>10 月 8 日</span>AC 超级玛丽</p>
+                <p><span>10 月 8 日</span>完成 openjudge 的 1.1 全部题目</p>
+                <p><span>下半年</span>接触 C++</p>
+            </span>
+            <span class="year">
+                <div class="date">2017</div>
+                <p><span>上半年</span>暂时中断 OI 学习</p>
+                <p><span>上半年</span>完全转入 C++</p>
+                <p><span>10 月 14 日 14:30</span>NOIP2017 普及组初赛</p>
+                <p><span>10 月 18 日 13:54</span>注册洛谷账号</p>
+                <p><span>11 月</span>惊喜地得知进入复赛</p>
+                <p><span>11 月 11 日</span>NOIP 普及复赛，115 分，二等</p>
+            </span>
+            <span class="year">
+                <div class="date">2018</div>
+                <p><span>上半年</span>学 MFC</p>
+                <p><span>上半年</span>认识的 OI 重要性</p>
+                <p><span>上半年</span>大幅度地学习信竞</p>
+                <p><span>8 月</span>选择考普及组</p>
+                <p><span>10 月 13 日 14:30</span>NOIP2018 普及组初赛</p>
+                <p><span>11 月 10 日</span>NOIP 普及复赛，180 分，二等</p>
+                <p><span>12 月</span>OI 终于被父母认可</p>
+            </span>
+            <span class="year">
+                <div class="date">2019</div>
+                <p><span>3 月 11 日</span>签约东辰</p>
+                <p><span>3 月 14 日</span>签约绵中</p>
+                <p><span>6 月 16 日</span>成都七中自主招生考试</p>
+                <p><span>6 月 18 日左右</span>成都七中录取通知</p>
+                <p><span>7 月</span>跟着叶老学信息学</p>
+                <p><span>8 月</span>博客大幅度更新</p>
+                <p><span>8 月 31 日</span>成都七中开学</p>
+                <p><span>11 月 16 日</span>CSP-S 2019 复赛，二等</p>
+            </span>
+            <span class="year">
+                <div class="date">2020</div>
+                <p><span>寒假</span>学习 npm、nodejs、html、css、js、vue</p>
+                <p><span>寒假</span>大幅度更新 / 重构博客</p>
+                <p><span>补充</span>自学人工智能，完成其可视化程序的编写</p>
+                <p><span>补充</span>完成 TIY 网页编辑器，里程碑式的进展</p>
+                <p><span>10 月</span>学会傅里叶级数变换，完成傅里叶级数模拟程序</p>
+                <p><span>11 月</span>“或许数学更有意思?"</p>
+                <p><span>12 月</span>开始自学群论</p>
+                <p><span>12 月</span>学习 Latex 的 tikz 库，终于可以清爽地绘图了！</p>
+            </span>
+            <span class="year">
+                <div class="date">2021</div>
+                <p><span>1 月</span>大幅重构博客，「大道至简」</p>
+                <p><span>2 月 1 日</span>DFT，IDFT 和 FFT！</p>
+                <p><span>2 月</span>博客全部迁移至 vercel，采用 CI 部署</p>
+                <p><span>3 月</span>自己写的第一个 api 破一万调用</p>
+                <p><span>3 月 17 日</span>自学偏微分，研究隐式方程绘制</p>
+            </span>
         </span>
         <p>点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>可以回到主页。</p>
     </div>
@@ -163,6 +238,10 @@ const router = new VueRouter({
         {
             path: "/mobile",
             component: mobile,
+        },
+        {
+            path: "/timeline",
+            component: timeline,
         },
         {
             path: "*",
