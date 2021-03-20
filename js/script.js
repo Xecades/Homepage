@@ -25,6 +25,7 @@ var lab = {
             <p><a href="https://tiy.xecades.xyz/" target="_blank">TIY</a>在线运行 HTML 代码</p>
             <p><a href="https://api.xecades.xyz/" target="_blank">Postcard API</a>个人身份卡片 API + 生成器</p>
             <p><a href="https://nazo.xecades.xyz/" target="_blank">Nazo</a>自制网页解密游戏</p>
+            <p><a href="https://github.com/Xecades/hexo-tag-tiy" target="_blank">hexo-tag-tiy</a>Hexo 内嵌 TIY</p>
             <p><a href="/lab/Fourier/" target="_blank">Fourier Transform</a>傅里叶级数绘图可视化</p>
             <p><a href="/lab/Scroll/" target="_blank">Scroll</a>Scroll 页面设计</p>
             <p><a href="/lab/Cube/" target="_blank">Cube Simulator</a>魔方模拟器</p>

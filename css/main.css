@@ -68,7 +68,7 @@ rt {
 
 #text.list .list p a {
     display: inline-block;
-    min-width: 150px;
+    min-width: 40%;
 }
 
 #text.list .timeline .year {
