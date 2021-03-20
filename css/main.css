@@ -164,4 +164,9 @@ rt {
     #text.list p::before {
         content: "";
     }
+
+    .fade-enter,
+    .fade-leave-to {
+        transform: unset;
+    }
 }
