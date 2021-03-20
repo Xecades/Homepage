@@ -21,6 +21,7 @@ const pxToM = 1e10; // 每像素对应多少米
 const fixed = 3; // 保留几位小数
 const G = 6.67e-11;
 const massGlobal = 1.99e30;
+const dotSize = 11;
 
 var ITEM_NUM = 3; // max: 15
 const EMPTY_PROMISE = new Promise(resolve => {
@@ -94,7 +95,7 @@ class item {
         this.speed = newSpeed;
     }
     generate() {
-        dot(this.pos, 11, "clear");
+        dot(this.pos, dotSize, "clear");
         var pos1 = this.pos;
         for (let i = 0; i < eps * refreshT / 1000; i++)
             this.calcNextFrame();
@@ -252,7 +253,7 @@ function line(pos1, pos2, color, pen = ctx) {
 }
 
 function isOut(pos) {
-    return pos.x < 0 || pos.x > g_col || pos.y < 0 || pos.y > g_row;
+    return pos.x < -dotSize || pos.x > g_col + dotSize || pos.y < -dotSize || pos.y > g_row + dotSize;
 }
 
 function clear(item) {
