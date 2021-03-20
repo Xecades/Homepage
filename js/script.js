@@ -1,4 +1,4 @@
-var index = {
+const index = {
     template: `
 <span>
     <div id="title">你好。</div>
@@ -9,62 +9,11 @@ var index = {
         <p>我会在<a href="https://blog.xecades.xyz/"><ruby><rb>博客</rb><rt>/blog</rt></ruby></a>上记录我感兴趣的内容。有时，我会开发一些好玩的<router-link to="/lab"><ruby><rb>项目</rb><rt>/lab</rt></ruby></router-link>。我喜欢邂逅<router-link to="/friend"><ruby><rb>有趣的灵魂</rb><rt>/friend</rt></ruby></router-link>，他们给了我很多新的思考，伴随着我的<router-link to="/timeline"><ruby><rb>成长</rb><rt>/timeline</rt></ruby></router-link>。</p>
     </div>
 </span>`,
-    mounted() {
-        CURSOR.refresh();
-    },
+    mounted() { CURSOR.refresh(); },
+    props: [ "lab", "friend", "memory", "timeline" ]
 };
 
-var lab = {
-    template: `
-<span>
-    <div id="title">实验室</div>
-    <div id="text" class="list">
-        <p class="bold">有一些好玩的东西。</p>
-        <span class="list">
-            <p><a href="https://ai.xecades.xyz/" target="_blank">Artificial Intelligence</a>BP 神经网络数字识别可视化</p>
-            <p><a href="https://tiy.xecades.xyz/" target="_blank">TIY</a>在线运行 HTML 代码</p>
-            <p><a href="https://api.xecades.xyz/" target="_blank">Postcard API</a>个人身份卡片 API + 生成器</p>
-            <p><a href="https://nazo.xecades.xyz/" target="_blank">Nazo</a>自制网页解密游戏</p>
-            <p><a href="https://github.com/Xecades/hexo-tag-tiy" target="_blank">hexo-tag-tiy</a>Hexo 内嵌 TIY</p>
-            <p><a href="/lab/Fourier/" target="_blank">Fourier Transform</a>傅里叶级数绘图可视化</p>
-            <p><a href="/lab/Scroll/" target="_blank">Scroll</a>Scroll 页面设计</p>
-            <p><a href="/lab/Cube/" target="_blank">Cube Simulator</a>魔方模拟器</p>
-            <p><a href="/lab/Gravitation/" target="_blank">Gravitation Simulator</a>二维星体运动模拟器</p>
-            <p><a href="/lab/CA/" target="_blank">CA</a>元胞自动机生命游戏模拟器</p>
-        </span>
-
-        <p>对了，你可以点<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>回到主页。</p>
-    </div>
-</span>`,
-    mounted() {
-        CURSOR.refresh();
-    },
-};
-
-var friend = {
-    template: `
-<span>
-    <div id="title">友人帐</div>
-    <div id="text" class="list">
-        <p class="bold">有故事的人们。</p>
-        <span class="list">
-            <p><a href="https://zhr.wiki/" target="_blank" rel="noopener noreferrer">vHenry</a>酷</p>
-            <p><a href="https://comit.space/" target="_blank" rel="noopener noreferrer">Comit</a>der—</p>
-            <p><a href="https://noisky.cn/" target="_blank" rel="noopener noreferrer">Noisky</a>The Magic World</p>
-            <p><a href="https://one.wh0th.ink/" target="_blank" rel="noopener noreferrer">Hash</a>The one who think</p>
-            <p><a href="https://mivik.gitee.io/" target="_blank" rel="noopener noreferrer">Mivik</a>兴趣使然のProgrammer</p>
-            <p><a href="https://denerate.ink/" target="_blank" rel="noopener noreferrer">DeNeRATe</a>Life is hard to cut off, Lifelong lovesickness</p>
-            <p><a href="https://nekox.cn/" target="_blank" rel="noopener noreferrer">ArchyMoe</a></p>
-        </span>
-        <p>除此之外，你可以点<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>回到主页。</p>
-    </div>
-</span>`,
-    mounted() {
-        CURSOR.refresh();
-    },
-};
-
-var about = {
+const about = {
     template: `
 <span>
     <div id="title">关于我，</div>
@@ -79,111 +28,79 @@ var about = {
         <p>回主页的传送门在<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>。</p>
     </div>
 </span>`,
-    mounted() {
-        CURSOR.refresh();
-    },
+    mounted() { CURSOR.refresh(); },
+    props: [ "lab", "friend", "memory", "timeline" ]
 };
 
-var memory = {
+const lab = {
+    template: `
+<span>
+    <div id="title">实验室</div>
+    <div id="text" class="list">
+        <p class="bold">有一些好玩的东西。</p>
+        <span class="list">
+            <p v-for="item in lab"><a :href="item.url" target="_blank">{{ item.name }}</a>{{ item.desc }}</p>
+        </span>
+
+        <p>对了，你可以点<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>回到主页。</p>
+    </div>
+</span>`,
+    mounted() { CURSOR.refresh(); },
+    props: [ "lab", "friend", "memory", "timeline" ]
+};
+
+const friend = {
+    template: `
+<span>
+    <div id="title">友人帐</div>
+    <div id="text" class="list">
+        <p class="bold">有故事的人们。</p>
+        <span class="list">
+            <p v-for="item in friend"><a :href="item.url" target="_blank" rel="noopener noreferrer">{{ item.nick }}</a>{{ item.desc }}</p>
+        </span>
+        <p>除此之外，你可以点<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>回到主页。</p>
+    </div>
+</span>`,
+    mounted() { CURSOR.refresh(); },
+    props: [ "lab", "friend", "memory", "timeline" ]
+};
+
+const memory = {
     template: `
 <span>
     <div id="title">回忆</div>
     <div id="text" class="list">
         <p class="bold">那时……</p>
         <span class="list">
-            <p><a href='javascript:alert("石沉大海")'>版本 #1</a></p>
-            <p><a href='https://v1.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #2</a></p>
-            <p><a href='https://v2.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #3</a></p>
-            <p><a href='https://v3.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #4</a></p>
-            <p><a href='https://v5.backup.xecades.xyz/' target="_blank" rel="noopener noreferrer">版本 #5</a></p>
-            <p><a href='javascript:alert("Under construction")'>版本 #6</a></p>
-            <p><a href='javascript:alert("Under construction")'>版本 #7</a></p>
-            <p><a href='/' target="_blank">版本 #8</a></p>
+            <p v-for="item in memory"><a :href="item.url" target="_blank">{{ item.desc }}</a></p>
         </span>
         <p>点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>可以回到主页。</p>
     </div>
 </span>`,
-    mounted() {
-        CURSOR.refresh();
-    },
+    mounted() { CURSOR.refresh(); },
+    props: [ "lab", "friend", "memory", "timeline" ]
 };
 
-var timeline = {
+const timeline = {
     template: `
 <span>
     <div id="title">时光</div>
     <div id="text" class="list">
         <p class="bold">Epic of my own.</p>
         <span class="timeline">
-            <span class="year">
-                <div class="date">2016</div>
-                <p><span>上半年</span>接触 C</p>
-                <p><span>9 月 19 日 13:53</span>注册第一个OJ openjudge</p>
-                <p><span>9 月 29 日</span>提交第一个程序 超级玛丽 (WA)</p>
-                <p><span>9 月 29 日</span>第一次 AC 题目</p>
-                <p><span>10 月 8 日</span>AC 超级玛丽</p>
-                <p><span>10 月 8 日</span>完成 openjudge 的 1.1 全部题目</p>
-                <p><span>下半年</span>接触 C++</p>
-            </span>
-            <span class="year">
-                <div class="date">2017</div>
-                <p><span>上半年</span>暂时中断 OI 学习</p>
-                <p><span>上半年</span>完全转入 C++</p>
-                <p><span>10 月 14 日 14:30</span>NOIP2017 普及组初赛</p>
-                <p><span>10 月 18 日 13:54</span>注册洛谷账号</p>
-                <p><span>11 月</span>惊喜地得知进入复赛</p>
-                <p><span>11 月 11 日</span>NOIP 普及复赛，115 分，二等</p>
-            </span>
-            <span class="year">
-                <div class="date">2018</div>
-                <p><span>上半年</span>学 MFC</p>
-                <p><span>上半年</span>认识的 OI 重要性</p>
-                <p><span>上半年</span>大幅度地学习信竞</p>
-                <p><span>8 月</span>选择考普及组</p>
-                <p><span>10 月 13 日 14:30</span>NOIP2018 普及组初赛</p>
-                <p><span>11 月 10 日</span>NOIP 普及复赛，180 分，二等</p>
-                <p><span>12 月</span>OI 终于被父母认可</p>
-            </span>
-            <span class="year">
-                <div class="date">2019</div>
-                <p><span>3 月 11 日</span>签约东辰</p>
-                <p><span>3 月 14 日</span>签约绵中</p>
-                <p><span>6 月 16 日</span>成都七中自主招生考试</p>
-                <p><span>6 月 18 日左右</span>成都七中录取通知</p>
-                <p><span>7 月</span>跟着叶老学信息学</p>
-                <p><span>8 月</span>博客大幅度更新</p>
-                <p><span>8 月 31 日</span>成都七中开学</p>
-                <p><span>11 月 16 日</span>CSP-S 2019 复赛，二等</p>
-            </span>
-            <span class="year">
-                <div class="date">2020</div>
-                <p><span>寒假</span>学习 npm、nodejs、html、css、js、vue</p>
-                <p><span>寒假</span>大幅度更新 / 重构博客</p>
-                <p><span>补充</span>自学人工智能，完成其可视化程序的编写</p>
-                <p><span>补充</span>完成 TIY 网页编辑器，里程碑式的进展</p>
-                <p><span>10 月</span>学会傅里叶级数变换，完成傅里叶级数模拟程序</p>
-                <p><span>11 月</span>“或许数学更有意思?"</p>
-                <p><span>12 月</span>开始自学群论</p>
-                <p><span>12 月</span>学习 Latex 的 tikz 库，终于可以清爽地绘图了！</p>
-            </span>
-            <span class="year">
-                <div class="date">2021</div>
-                <p><span>1 月</span>大幅重构博客，「大道至简」</p>
-                <p><span>2 月 1 日</span>DFT，IDFT 和 FFT！</p>
-                <p><span>2 月</span>博客全部迁移至 vercel，采用 CI 部署</p>
-                <p><span>3 月</span>自己写的第一个 api 破一万调用</p>
-                <p><span>3 月 17 日</span>自学偏微分，研究隐式方程绘制</p>
+            <span class="year" v-for="item in timeline">
+                <div class="date">{{ item.year }}</div>
+                <p v-for="data in item.meta"><span>{{ data.date }}</span>{{ data.desc }}</p>
             </span>
         </span>
         <p>点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>可以回到主页。</p>
     </div>
 </span>`,
-    mounted() {
-        CURSOR.refresh();
-    },
+    mounted() { CURSOR.refresh(); },
+    props: [ "lab", "friend", "memory", "timeline" ]
 };
 
-var error = {
+const error = {
     template: `
 <span>
     <div id="title">404 Not Found</div>
@@ -193,12 +110,11 @@ var error = {
         <p>或者点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>返回主页。</p>
     </div>
 </span>`,
-    mounted() {
-        CURSOR.refresh();
-    },
+    mounted() { CURSOR.refresh(); },
+    props: [ "lab", "friend", "memory", "timeline" ]
 };
 
-var mobile = {
+const mobile = {
     template: `
 <span>
     <div id="title">Mobile Warning</div>
@@ -208,75 +124,149 @@ var mobile = {
         <p>请点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>返回主页。</p>
     </div>
 </span>`,
-    mounted() {
-        CURSOR.refresh();
-    },
+    mounted() { CURSOR.refresh(); },
+    props: [ "lab", "friend", "memory", "timeline" ]
 };
 
 const router = new VueRouter({
     mode: "history",
     routes: [
-        {
-            path: "/",
-            component: index,
-        },
-        {
-            path: "/lab",
-            component: lab,
-        },
-        {
-            path: "/friend",
-            component: friend,
-        },
-        {
-            path: "/about",
-            component: about,
-        },
-        {
-            path: "/memory",
-            component: memory,
-        },
-        {
-            path: "/mobile",
-            component: mobile,
-        },
-        {
-            path: "/timeline",
-            component: timeline,
-        },
-        {
-            path: "*",
-            component: error,
-        },
+        { path: "/",            component: index     },
+        { path: "/lab",         component: lab       },
+        { path: "/friend",      component: friend    },
+        { path: "/about",       component: about     },
+        { path: "/memory",      component: memory    },
+        { path: "/mobile",      component: mobile    },
+        { path: "/timeline",    component: timeline  },
+        { path: "*",            component: error     }
     ],
-    scrollBehavior(to, from, savedPosition) {
+    scrollBehavior() {
         return {
             x: 0, y: 0,
             behavior: 'smooth',
         }
     }
-
 });
 
 const app = new Vue({
     el: "#app",
-    router,
+    data: {
+        lab: [
+            { name: "Artificial Intelligence",  url: "https://ai.xecades.xyz/",                 desc: "BP 神经网络数字识别可视化" },
+            { name: "TIY",                      url: "https://tiy.xecades.xyz/",                desc: "在线运行 HTML 代码" },
+            { name: "Postcard API",             url: "https://api.xecades.xyz/",                desc: "个人身份卡片 API + 生成器" },
+            { name: "Nazo",                     url: "https://nazo.xecades.xyz/",               desc: "自制网页解密游戏" },
+            { name: "hexo-tag-tiy",             url: "https://github.com/Xecades/hexo-tag-tiy", desc: "Hexo 内嵌 TIY" },
+            { name: "Fourier Transform",        url: "/lab/Fourier/",                           desc: "傅里叶级数绘图可视化" },
+            { name: "Scroll",                   url: "/lab/Scroll/",                            desc: "Scroll 页面设计" },
+            { name: "Cube Simulator",           url: "/lab/Cube/",                              desc: "魔方模拟器" },
+            { name: "Gravitation Simulator",    url: "/lab/Gravitation/",                       desc: "二维星体运动模拟器" },
+            { name: "CA",                       url: "/lab/CA/",                                desc: "元胞自动机生命游戏模拟器" }
+        ],
+        friend: [
+            { nick: "vHenry",                   url: "https://zhr.wiki/",                       desc: "酷" },
+            { nick: "Comit",                    url: "https://comit.space/",                    desc: "der—" },
+            { nick: "Noisky",                   url: "https://noisky.cn/",                      desc: "The Magic World" },
+            { nick: "Hash",                     url: "https://one.wh0th.ink/",                  desc: "The one who think" },
+            { nick: "Mivik",                    url: "https://mivik.gitee.io/",                 desc: "兴趣使然のProgrammer" },
+            { nick: "DeNeRATe",                 url: "https://denerate.ink/",                   desc: "Life is hard to cut off, Lifelong lovesickness" },
+            { nick: "ArchyMoe",                 url: "https://nekox.cn/",                       desc: "" }
+        ],
+        memory: [
+            { url: "javascript:alert('石沉大海')",                   desc: "版本 #0" },
+            { url: "https://v1.backup.xecades.xyz/",                desc: "版本 #1" },
+            { url: "https://v2.backup.xecades.xyz/",                desc: "版本 #2" },
+            { url: "https://v3.backup.xecades.xyz/",                desc: "版本 #3" },
+            { url: "https://v4.backup.xecades.xyz/",                desc: "版本 #4" },
+            { url: "javascript:alert('Under construction')",        desc: "版本 #5" },
+            { url: "javascript:alert('Under construction')",        desc: "版本 #6" },
+            { url: "/",                                             desc: "版本 #7" }
+        ],
+        timeline: [
+            {
+                year: 2016,
+                meta: [
+                    { date: "上半年",               desc: "接触 C" },
+                    { date: "9 月 19 日 13:53",     desc: "注册第一个OJ openjudge" },
+                    { date: "9 月 29 日",           desc: "提交第一个程序 超级玛丽 (WA)" },
+                    { date: "9 月 29 日",           desc: "第一次 AC 题目" },
+                    { date: "10 月 8 日",           desc: "AC 超级玛丽" },
+                    { date: "10 月 8 日",           desc: "完成 openjudge 的 1.1 全部题目" },
+                    { date: "下半年",               desc: "接触 C++" }
+                ]
+            },
+            {
+                year: 2017,
+                meta: [
+                    { date: "上半年",               desc: "暂时中断 OI 学习" },
+                    { date: "上半年",               desc: "完全转入 C++" },
+                    { date: "10 月 14 日 14:30",    desc: "NOIP2017 普及组初赛" },
+                    { date: "10 月 18 日 13:54",    desc: "注册洛谷账号" },
+                    { date: "11 月",                desc: "惊喜地得知进入复赛" },
+                    { date: "11 月 11 日",          desc: "NOIP 普及复赛，115 分，二等" }
+                ]
+            },
+            {
+                year: 2018,
+                meta: [
+                    { date: "上半年",               desc: "学 MFC" },
+                    { date: "上半年",               desc: "认识的 OI 重要性" },
+                    { date: "上半年",               desc: "大幅度地学习信竞" },
+                    { date: "8 月",                 desc: "选择考普及组" },
+                    { date: "10 月 13 日 14:30",    desc: "NOIP2018 普及组初赛" },
+                    { date: "11 月 10 日",          desc: "NOIP 普及复赛，180 分，二等" },
+                    { date: "12 月",                desc: "OI 终于被父母认可" }
+                ]
+            },
+            {
+                year: 2019,
+                meta: [
+                    { date: "3 月 11 日",           desc: "签约东辰" },
+                    { date: "3 月 14 日",           desc: "签约绵中" },
+                    { date: "6 月 16 日",           desc: "成都七中自主招生考试" },
+                    { date: "6 月 18 日左右",       desc: "成都七中录取通知" },
+                    { date: "7 月",                 desc: "跟着叶老学信息学" },
+                    { date: "8 月",                 desc: "博客大幅度更新" },
+                    { date: "8 月 31 日",           desc: "成都七中开学" },
+                    { date: "11 月 16 日",          desc: "CSP-S 2019 复赛，二等" }
+                ]
+            },
+            {
+                year: 2020,
+                meta: [
+                    { date: "寒假",                 desc: "学习 npm、nodejs、html、css、js、vue" },
+                    { date: "寒假",                 desc: "大幅度更新 / 重构博客" },
+                    { date: "补充",                 desc: "自学人工智能，完成其可视化程序的编写" },
+                    { date: "补充",                 desc: "完成 TIY 网页编辑器，里程碑式的进展" },
+                    { date: "10 月",                desc: "学会傅里叶级数变换，完成傅里叶级数模拟程序" },
+                    { date: "11 月",                desc: "或许数学更有意思?" },
+                    { date: "12 月",                desc: "开始自学群论" },
+                    { date: "12 月",                desc: "学习 Latex 的 tikz 库，终于可以清爽地绘图了！" }
+                ]
+            },
+            {
+                year: 2021,
+                meta: [
+                    { date: "1 月",                 desc: "大幅重构博客，「大道至简」" },
+                    { date: "2 月 1 日",            desc: "DFT，IDFT 和 FFT！" },
+                    { date: "2 月",                 desc: "博客全部迁移至 vercel，采用 CI 部署" },
+                    { date: "3 月",                 desc: "自己写的第一个 api 破一万调用" },
+                    { date: "3 月 17 日",           desc: "自学偏微分，研究隐式方程绘制" }
+                ]
+            }
+        ]
+    },
+    router
 });
 
-var TOG;
-var CHK = localStorage.getItem("isBoundaryDisplayed") == "true" ? false : true;
-
 function toggleBorder() {
-    !TOG && document.body.appendChild((TOG = document.createElement("style")));
-    (CHK = !CHK)
+    !window.TOG && document.body.appendChild((window.TOG = document.createElement("style")));
+    (window.CHK = !window.CHK)
         ? (TOG.innerHTML = `*{box-shadow: 0 0 0 1px cyan}`)
         : (TOG.innerHTML = "");
-    localStorage.setItem("isBoundaryDisplayed", CHK);
 }
 
 (() => {
-    toggleBorder();
-
     console.clear();
     console.log("Copyright ©2019-2021 Xecades");
     console.log("----------------------------");
