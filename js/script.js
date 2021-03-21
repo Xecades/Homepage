@@ -10,7 +10,7 @@ const index = {
     </div>
 </span>`,
     mounted() { CURSOR.refresh(); },
-    props: [ "lab", "friend", "memory", "timeline" ]
+    props: [ "lab", "friend", "timeline" ]
 };
 
 const about = {
@@ -29,7 +29,7 @@ const about = {
     </div>
 </span>`,
     mounted() { CURSOR.refresh(); },
-    props: [ "lab", "friend", "memory", "timeline" ]
+    props: [ "lab", "friend", "timeline" ]
 };
 
 const lab = {
@@ -46,7 +46,7 @@ const lab = {
     </div>
 </span>`,
     mounted() { CURSOR.refresh(); },
-    props: [ "lab", "friend", "memory", "timeline" ]
+    props: [ "lab", "friend", "timeline" ]
 };
 
 const friend = {
@@ -62,23 +62,7 @@ const friend = {
     </div>
 </span>`,
     mounted() { CURSOR.refresh(); },
-    props: [ "lab", "friend", "memory", "timeline" ]
-};
-
-const memory = {
-    template: `
-<span>
-    <div id="title">回忆</div>
-    <div id="text" class="list">
-        <p class="bold">那时……</p>
-        <span class="list">
-            <p v-for="item in memory"><a :href="item.url" target="_blank">{{ item.desc }}</a></p>
-        </span>
-        <p>点击<router-link to="/"><ruby><rb>这里</rb><rt>/index</rt></ruby></router-link>可以回到主页。</p>
-    </div>
-</span>`,
-    mounted() { CURSOR.refresh(); },
-    props: [ "lab", "friend", "memory", "timeline" ]
+    props: [ "lab", "friend", "timeline" ]
 };
 
 const timeline = {
@@ -97,7 +81,7 @@ const timeline = {
     </div>
 </span>`,
     mounted() { CURSOR.refresh(); },
-    props: [ "lab", "friend", "memory", "timeline" ]
+    props: [ "lab", "friend", "timeline" ]
 };
 
 const error = {
@@ -111,7 +95,7 @@ const error = {
     </div>
 </span>`,
     mounted() { CURSOR.refresh(); },
-    props: [ "lab", "friend", "memory", "timeline" ]
+    props: [ "lab", "friend", "timeline" ]
 };
 
 const mobile = {
@@ -125,7 +109,7 @@ const mobile = {
     </div>
 </span>`,
     mounted() { CURSOR.refresh(); },
-    props: [ "lab", "friend", "memory", "timeline" ]
+    props: [ "lab", "friend", "timeline" ]
 };
 
 const router = new VueRouter({
@@ -135,7 +119,6 @@ const router = new VueRouter({
         { path: "/lab",         component: lab       },
         { path: "/friend",      component: friend    },
         { path: "/about",       component: about     },
-        { path: "/memory",      component: memory    },
         { path: "/mobile",      component: mobile    },
         { path: "/timeline",    component: timeline  },
         { path: "*",            component: error     }
@@ -171,16 +154,6 @@ const app = new Vue({
             { nick: "Mivik",                    url: "https://mivik.gitee.io/",                 desc: "兴趣使然のProgrammer" },
             { nick: "DeNeRATe",                 url: "https://denerate.ink/",                   desc: "Life is hard to cut off, Lifelong lovesickness" },
             { nick: "ArchyMoe",                 url: "https://nekox.cn/",                       desc: "" }
-        ],
-        memory: [
-            { url: "javascript:alert('石沉大海')",                   desc: "版本 #0" },
-            { url: "https://v1.backup.xecades.xyz/",                desc: "版本 #1" },
-            { url: "https://v2.backup.xecades.xyz/",                desc: "版本 #2" },
-            { url: "https://v3.backup.xecades.xyz/",                desc: "版本 #3" },
-            { url: "https://v4.backup.xecades.xyz/",                desc: "版本 #4" },
-            { url: "javascript:alert('Under construction')",        desc: "版本 #5" },
-            { url: "javascript:alert('Under construction')",        desc: "版本 #6" },
-            { url: "/",                                             desc: "版本 #7" }
         ],
         timeline: [
             {
