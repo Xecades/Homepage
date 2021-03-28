@@ -239,13 +239,28 @@ function toggleBorder() {
         : (TOG.innerHTML = "");
 }
 
-(() => {
+window.onload = () => {
     console.clear();
-    console.log("Copyright ©2019-2021 Xecades");
-    console.log("----------------------------");
-    console.log("Hey🎉，想看源码？");
-    console.log("在这 => https://github.com/Xecades/Homepage/");
-    console.log("如果你想使用本站源码，请注明作者为 Xecades，并附上相关链接，谢谢。");
-    console.log("");
-    console.log("调试时如果要显示 DOM 边界，可以使用函数 toggleBorder()");
-})();
+    console.log(`
+    ┌─Xecades Homepage───────────────────────────────────────┐
+    │                                                        │
+    │              Yet another concise homepage              │
+    │                                                        │
+    ├────────────────────────────────────────────────────────┤
+    │                                                        │
+    │ Github            https://github.com/Xecades/Homepage/ │
+    │ Website                           https://xecades.xyz/ │
+    │                                                        │
+    ├────────────────────────────────────────────────────────┤
+    │                                                        │
+    │ Use toggleBorder() to display DOM border               │
+    │ Use CURSOR.refresh() to reload cursor                  │
+    │                                                        │
+    ├────────────────────────────────────────────────────────┤
+    │                                                        │
+    │ MIT LICENSE                                            │
+    │ Copyright © 2019 - 2021 Xecades                        │
+    │                                                        │
+    └────────────────────────────────────────────────────────┘
+    `);
+}
