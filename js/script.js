@@ -141,10 +141,10 @@ const app = new Vue({
             { name: "Nazo",                     url: "https://nazo.xecades.xyz/",               desc: "自制网页解密游戏" },
             { name: "hexo-tag-tiy",             url: "https://github.com/Xecades/hexo-tag-tiy", desc: "Hexo 内嵌 TIY" },
             { name: "Fourier Transform",        url: "/lab/Fourier/",                           desc: "傅里叶级数绘图可视化" },
-            { name: "Scroll",                   url: "/lab/Scroll/",                            desc: "Scroll 页面设计" },
+            // { name: "Scroll",                   url: "/lab/Scroll/",                            desc: "Scroll 页面设计" },
             { name: "Cube Simulator",           url: "/lab/Cube/",                              desc: "魔方模拟器" },
             { name: "Gravitation Simulator",    url: "/lab/Gravitation/",                       desc: "二维星体运动模拟器" },
-            { name: "CA",                       url: "/lab/CA/",                                desc: "元胞自动机生命游戏模拟器" }
+            // { name: "CA",                       url: "/lab/CA/",                                desc: "元胞自动机生命游戏模拟器" }
         ],
         friend: [
             { nick: "vHenry",                   url: "https://zhr.wiki/",                       desc: "酷" },
@@ -212,7 +212,7 @@ const app = new Vue({
                     { date: "补充",                 desc: "自学人工智能，完成其可视化程序的编写" },
                     { date: "补充",                 desc: "完成 TIY 网页编辑器，里程碑式的进展" },
                     { date: "10 月",                desc: "学会傅里叶级数变换，完成傅里叶级数模拟程序" },
-                    { date: "11 月",                desc: "或许数学更有意思?" },
+                    { date: "11 月",                desc: "或许数学更有意思？" },
                     { date: "12 月",                desc: "开始自学群论" },
                     { date: "12 月",                desc: "学习 Latex 的 tikz 库，终于可以清爽地绘图了！" }
                 ]
@@ -224,7 +224,9 @@ const app = new Vue({
                     { date: "2 月 1 日",            desc: "DFT，IDFT 和 FFT！" },
                     { date: "2 月",                 desc: "博客全部迁移至 vercel，采用 CI 部署" },
                     { date: "3 月",                 desc: "自己写的第一个 api 破一万调用" },
-                    { date: "3 月 17 日",           desc: "自学偏微分，研究隐式方程绘制" }
+                    { date: "3 月 17 日",           desc: "学习偏导、隐式方程绘制" },
+                    { date: "3 月",                 desc: "在阿里云白嫖了一年的 ecs" },
+                    { date: "4 月",                 desc: "重新开始玩几年前买的树莓派" }
                 ]
             }
         ]
