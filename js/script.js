@@ -225,7 +225,7 @@ const app = new Vue({
                     { date: "2 月",                 desc: "博客全部迁移至 vercel，采用 CI 部署" },
                     { date: "3 月",                 desc: "自己写的第一个 api 破一万调用" },
                     { date: "3 月 17 日",           desc: "学习偏导、隐式方程绘制" },
-                    { date: "3 月",                 desc: "在阿里云白嫖了一年的 ecs" },
+                    { date: "3 月",                 desc: "在阿里云白嫖了一个月的 ecs" },
                     { date: "4 月",                 desc: "重新开始玩几年前买的树莓派" }
                 ]
             }
