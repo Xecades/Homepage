@@ -63,6 +63,7 @@ p {
 }
 
 a {
-    color: rgb(0, 93, 146) !important;
+    color: rgb(0, 93, 146);
+    @apply opacity-70;
 }
 </style>
