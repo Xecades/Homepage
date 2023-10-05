@@ -7,18 +7,22 @@ import config from "../config.yml";
 
 <template>
     <span>
-        <div class="text-5xl tracking-wider mb-3 h-14">友人帐</div>
+        <div class="reveal reveal-hide text-5xl tracking-wider mb-3 h-14">友人帐</div>
         <div>
-            <p class="font-bold">有故事的人们。</p>
-            <ul class="border-y -mx-2 sm:px-10 sm:mx-2 mb-3">
+            <p class="font-bold reveal reveal-hide">有故事的人们。</p>
+
+            <div class="reveal reveal-hide sm:mx-2 -mx-2 h-0 border-t"></div>
+            <ul class="-mx-2 sm:px-10 sm:mx-2">
                 <li v-for="item in config.friend"
                     :key="item"
-                    class="text-base sm:text-lg py-2 my-1 hover:bg-gray-100 dark:hover:bg-neutral-700 px-4 rounded transition-colors">
+                    class="reveal reveal-hide text-base sm:text-lg py-2 my-1 hover:bg-gray-100 dark:hover:bg-neutral-700 px-4 rounded">
                     <LinkTo :src="item.url" class="inline-block sm:min-w-52 min-w-full sm:mb-0 mb-1" mode="jump">{{ item.nick }}</LinkTo>
                     <span class="sm:text-base text-sm sm:ml-0 ml-5">{{ item.desc }}</span>
                 </li>
             </ul>
-            <p>除此之外，你可以点<LinkTo src="/"><RubyText text="/index">这里</RubyText></LinkTo>回到主页。</p>
+            <div class="reveal reveal-hide sm:mx-2 -mx-2 h-0 border-t mb-3"></div>
+            
+            <p class="reveal reveal-hide">除此之外，你可以点<LinkTo src="/"><RubyText text="/index">这里</RubyText></LinkTo>回到主页。</p>
         </div>
     </span>
 </template>

@@ -1,6 +1,6 @@
 {
   "name": "project-xec",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "image-promise": "^7.0.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },

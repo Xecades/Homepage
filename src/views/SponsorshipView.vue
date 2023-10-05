@@ -12,15 +12,16 @@ let list = ref(config.sponsorship.reverse());
 
 <template>
     <span>
-        <div class="text-5xl tracking-wider mb-3 h-14">赞助者</div>
+        <div class="reveal reveal-hide text-5xl tracking-wider mb-3 h-14">赞助者</div>
         <div>
-            <p class="font-bold">谢谢你，</p>
-            <p>你的每一分善意都将被他记在心中。</p>
+            <p class="font-bold reveal reveal-hide">谢谢你，</p>
+            <p class="reveal reveal-hide">你的每一分善意都将被他记在心中。</p>
 
-            <ul class="border-y sm:mx-2 -mx-2 sm:px-10 mb-3 select-none">
+            <div class="reveal reveal-hide sm:mx-2 -mx-2 h-0 border-t"></div>
+            <ul class="sm:mx-2 -mx-2 sm:px-10 select-none">
                 <li v-for="item in list"
                     :key="item"
-                    class="cursor text-base sm:text-lg py-2 my-1 hover:bg-gray-100 dark:hover:bg-neutral-700 px-4 rounded transition-colors">
+                    class="reveal reveal-hide cursor text-base sm:text-lg py-2 my-1 hover:bg-gray-100 dark:hover:bg-neutral-700 px-4 rounded">
                     <a href="javascript:void(0)" class="inline-block sm:min-w-52 min-w-full sm:mb-0 mb-1">
                         {{ item.nick }}
                         <transition name="sponsor">
@@ -33,8 +34,10 @@ let list = ref(config.sponsorship.reverse());
                     <span class="sm:text-base text-sm sm:ml-0 ml-5">{{ item.desc }}</span>
                 </li>
             </ul>
-            <p>注：手动更新，排名不分先后。</p>
-            <p>你可以点击<a href="javascript:void(0)" @click="show = !show" class="cursor"><RubyText :text="show ? 'ON' : 'OFF'">这里</RubyText></a>切换赞助金额显示，或者点击回到<LinkTo src="/"><RubyText text="/index">主页</RubyText></LinkTo>或<LinkTo src="/sponsor"><RubyText text="/sponsor">赞助</RubyText></LinkTo>页面。
+            <div class="reveal reveal-hide sm:mx-2 -mx-2 h-0 border-t mb-3"></div>
+
+            <p class="reveal reveal-hide">注：手动更新，排名不分先后。</p>
+            <p class="reveal reveal-hide">你可以点击<a href="javascript:void(0)" @click="show = !show" class="cursor"><RubyText :text="show ? 'ON' : 'OFF'">这里</RubyText></a>切换赞助金额显示，或者点击回到<LinkTo src="/"><RubyText text="/index">主页</RubyText></LinkTo>或<LinkTo src="/sponsor"><RubyText text="/sponsor">赞助</RubyText></LinkTo>页面。
             </p>
         </div>
     </span>

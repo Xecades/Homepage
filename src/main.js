@@ -6,6 +6,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import cur from "./assets/js/cursor";
+import reveal from "./assets/js/reveal";
 
 const app = createApp(App);
 
@@ -16,6 +17,7 @@ app.mount("#app");
 // I know this is an awful decision, but it actually works pretty well.
 setTimeout(() => {
     cur.refresh();
+    reveal();
 }, 300);
 
 window.onload = () => {
@@ -43,4 +45,4 @@ window.onload = () => {
     │                                                        │
     └────────────────────────────────────────────────────────┘
     `);
-}
+};

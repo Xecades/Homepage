@@ -5,11 +5,11 @@ import LinkTo from "../components/LinkTo.vue";
 
 <template>
     <span>
-        <div class="text-4xl sm:text-5xl tracking-wider mb-3 h-14">404 Not Found</div>
+        <div class="reveal reveal-hide text-4xl sm:text-5xl tracking-wider mb-3 h-14">404 Not Found</div>
         <div>
-            <p class="font-bold">抱歉，</p>
-            <p>请检查你访问的网址是否正确，</p>
-            <p>或者点击<LinkTo src="/"><RubyText text="/index">这里</RubyText></LinkTo>返回主页。</p>
+            <p class="font-bold reveal reveal-hide">抱歉，</p>
+            <p class="reveal reveal-hide">请检查你访问的网址是否正确，</p>
+            <p class="reveal reveal-hide">或者点击<LinkTo src="/"><RubyText text="/index">这里</RubyText></LinkTo>返回主页。</p>
         </div>
     </span>
 </template>

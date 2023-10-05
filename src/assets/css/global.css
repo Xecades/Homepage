@@ -22,6 +22,14 @@
     .left-1\/8 {
         left: 12.5%;
     }
+
+    .reveal {
+        @apply transition-all duration-500;
+    }
+
+    .reveal-hide {
+        @apply opacity-0 translate-y-1;
+    }
 }
 
 * {
