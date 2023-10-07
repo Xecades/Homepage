@@ -5,7 +5,6 @@ import loadImage from "image-promise";
 import wechatURL from "./assets/img/wechat.jpg";
 import alipayURL from "./assets/img/alipay.jpg";
 
-
 loadImage([wechatURL, alipayURL]);
 </script>
 
