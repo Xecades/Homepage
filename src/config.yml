@@ -85,7 +85,7 @@ timeline:
     meta: [
         { date: "上半年",               desc: "学了一些 MFC" },
         { date: "上半年",               desc: "认识到 OI 重要性" },
-        { date: "上半年",               desc: "大幅度地学习信竞" },
+        { date: "上半年",               desc: "大量学习信竞" },
         { date: "8 月",                 desc: "选择还是考普及组" },
         { date: "10 月 13 日 14:30",    desc: "NOIP2018 普及组初赛" },
         { date: "11 月 10 日",          desc: "NOIP2018 普及复赛" },

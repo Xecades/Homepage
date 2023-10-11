@@ -13,11 +13,11 @@ import config from "../config.yml";
 
             <div class="reveal reveal-hide sm:mx-2 -mx-2 h-0 border-t"></div>
             <ul class="sm:mx-2 -mx-2 sm:px-10 pt-7">
-                <li v-for="item in config.timeline"
+                <li v-for="item in config.timeline.reverse()"
                     :key="item.year"
                     class="block sm:mb-14 mb-7 py-2 last:mb-7">
                     <div class="reveal reveal-hide block font-bold text-8xl select-none text-stone-100 -rotate-90 absolute sm:-translate-x-32 -translate-x-24 translate-y-14">{{ item.year }}</div>
-                    <div v-for="data in item.meta"
+                    <div v-for="data in item.meta.reverse()"
                         :key="data"
                         class="reveal reveal-hide cursor sm:ml-8 ml-10 hover:bg-gray-100 dark:hover:bg-neutral-700 px-4 rounded whitespace-nowrap text-ellipsis overflow-hidden text-lg leading-9 mb-2">
                         <span class="text-base hidden min-w-40 sm:inline-block">{{ data.date }}</span>
