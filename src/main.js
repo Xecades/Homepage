@@ -33,6 +33,7 @@ window.onload = () => {
     │                                                        │
     │ Github            https://github.com/Xecades/Homepage/ │
     │ Website                           https://xecades.xyz/ │
+    │ QQ                   [DNS TXT] https://qq.xecades.xyz/ │
     │                                                        │
     ├────────────────────────────────────────────────────────┤
     │                                                        │
