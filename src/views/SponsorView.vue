@@ -22,6 +22,6 @@ p {
 }
 
 .qrcode img {
-    @apply w-1/2 sm:w-72 bg-white border border-gray-200 dark:border-gray-700 rounded sm:mr-8 mb-4 inline-block select-none;
+    @apply w-1/2 sm:w-64 bg-white border border-gray-200 dark:border-gray-700 rounded sm:mr-8 mb-4 inline-block select-none;
 }
 </style>
