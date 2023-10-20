@@ -64,6 +64,6 @@ p {
 
 a {
     color: rgb(0, 93, 146);
-    @apply opacity-70;
+    @apply opacity-70 dark:text-sky-300;
 }
 </style>
