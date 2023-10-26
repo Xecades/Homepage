@@ -10,6 +10,6 @@ loadImage([wechatURL, alipayURL]);
 
 <template>
     <div class="w-full text-gray-600 dark:text-gray-300">
-        <RouterView class="main block transition-opacity duration-200 ease-out mx-auto w-[40rem] py-40"></RouterView>
+        <RouterView class="main block transition-opacity duration-200 ease-out mx-auto w-5/6 sm:w-[40rem] py-40"></RouterView>
     </div>
 </template>
