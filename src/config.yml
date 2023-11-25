@@ -49,6 +49,9 @@ lab:
   - name: Gravitation Simulator
     url: /lab/Gravitation/
     desc: 二维星体运动模拟器
+  - name: Sort
+    url: /lab/Sort/
+    desc: 排序算法可视化
 
 friend:
   - nick: Mivik
