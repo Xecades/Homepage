@@ -140,7 +140,7 @@ const ALGO_MAP = {
 
 let params = new URLSearchParams(location.search);
 
-let f = ALGO_MAP[params.get("algorithm") || "merge"];
+let f = ALGO_MAP[params.get("algorithm") || "bubble"];
 let N = +params.get("N") || 30;
 let ms_delay = +params.get("delay") || 300;
 let paused = true;
@@ -162,7 +162,7 @@ document.onkeydown = (e) => {
     if (e.code == "ArrowDown") delay_mul(2);
 }
 
-$id("algorithm").value = params.get("algorithm") || "merge";
+$id("algorithm").value = params.get("algorithm") || "bubble";
 $id("N").value = +params.get("N") || 30;
 $id("delay").value = +params.get("delay") || 300;
 
