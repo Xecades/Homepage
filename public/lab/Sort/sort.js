@@ -97,16 +97,18 @@ async function quickSortHoare(cb, begin = 0, end = N - 1) {
     await cb.range(MAIN, begin, end);
 
     let pivot = main[mid];
+    let loc_pivot = mid;
     let i = begin - 1, j = end + 1;
     while (true) {
-        do { i++; await cb.compare(MAIN, i, MAIN, mid); } while (main[i] < pivot);
-        do { j--; await cb.compare(MAIN, j, MAIN, mid); } while (main[j] > pivot);
+        do { i++; await cb.compare(MAIN, i, MAIN, loc_pivot); } while (main[i] < pivot);
+        do { j--; await cb.compare(MAIN, j, MAIN, loc_pivot); } while (main[j] > pivot);
         if (i >= j) break;
 
         await cb.swap(MAIN, i, MAIN, j, async () => {
             if (i == mid || j == mid) {
+                loc_pivot = i == mid ? j : i;
                 await cb.clearMark(MAIN);
-                await cb.mark(MAIN, i == mid ? j : i);
+                await cb.mark(MAIN, loc_pivot);
             }
         });
     }
