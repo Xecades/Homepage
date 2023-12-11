@@ -68,7 +68,7 @@ body {
         linear-gradient(90deg, #fff, #fff);
     scrollbar-width: none;
     -ms-overflow-style: none;
-    @apply overflow-x-hidden bg-no-repeat bg-fixed outline-none dark:bg-none dark:bg-neutral-800
+    @apply overflow-x-hidden bg-no-repeat bg-fixed outline-none dark:bg-none dark:bg-neutral-900
 }
 
 #app {
