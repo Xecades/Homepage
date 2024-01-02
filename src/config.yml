@@ -76,12 +76,12 @@ timeline:
         { date: "9 月 29 日",           desc: "第一次 AC 题目" },
         { date: "10 月 8 日",           desc: "AC 超级玛丽" },
         { date: "10 月 8 日",           desc: "完成 openjudge 的 1.1 全部题目" },
-        { date: "下半年",               desc: "接触 C++" },
+        { date: "下半年",               desc: "学习 C++" },
       ]
   - year: 2017
     meta: [
         { date: "上半年",               desc: "暂时中断 OI 学习" },
-        { date: "上半年",               desc: "完全转入 C++" },
+        { date: "上半年",               desc: "完全从 C 转入 C++" },
         { date: "10 月 14 日 14:30",    desc: "NOIP2017 普及组初赛" },
         { date: "10 月 18 日 13:54",    desc: "注册洛谷账号" },
         { date: "11 月",                desc: "惊喜地得知进入复赛" },
@@ -91,10 +91,10 @@ timeline:
     meta: [
         { date: "上半年",               desc: "学了一些 MFC" },
         { date: "上半年",               desc: "认识到 OI 重要性" },
-        { date: "上半年",               desc: "大量学习信竞" },
+        { date: "上半年",               desc: "继续学习信竞" },
         { date: "8 月",                 desc: "选择还是考普及组" },
         { date: "10 月 13 日 14:30",    desc: "NOIP2018 普及组初赛" },
-        { date: "11 月 10 日",          desc: "NOIP2018 普及复赛" },
+        { date: "11 月 10 日",          desc: "NOIP2018 普及组复赛" },
         { date: "12 月",                desc: "OI 终于被父母认可" },
       ]
   - year: 2019
@@ -111,7 +111,7 @@ timeline:
   - year: 2020
     meta: [
         { date: "寒假",                 desc: "学习 npm、nodejs、web、vue" },
-        { date: "寒假",                 desc: "大幅度更新 / 重构博客" },
+        { date: "寒假",                 desc: "大幅更新 / 重构博客" },
         { date: "补充",                 desc: "初识人工智能，编写其可视化程序" },
         { date: "补充",                 desc: "完成 TIY 网页编辑器，里程碑式的进展" },
         { date: "10 月",                desc: "初识傅里叶级数变换，编写其模拟程序" },
@@ -128,7 +128,7 @@ timeline:
         { date: "3 月 17 日",           desc: "学习偏导、隐式方程绘制" },
         { date: "3 月",                 desc: "在阿里云试用了一个月的 ecs" },
         { date: "4 月",                 desc: "重新开始玩几年前买的树莓派" },
-        { date: "6 月 7 日",            desc: "高二提前参加高考" },
+        { date: "6 月 7 日",            desc: "高二提前高考" },
         { date: "暑假",                 desc: "第一个摆脱了电脑的暑假" },
         { date: "补充",                 desc: "新爱好：Engraver's Script 英文书法" },
       ]
@@ -137,14 +137,19 @@ timeline:
         { date: "这一年",                desc: "高考年" },
         { date: "4 月 18 日白天",        desc: "在 16 岁提前到来的成人礼" },
         { date: "4 月 18 日晚上",        desc: "换掉了用了 7 年的头像" },
-        { date: "4 月",                 desc: "强基计划报名" },
-        { date: "6 月 7 日",            desc: "参加高考" },
+        { date: "6 月 7 日",            desc: "高考" },
         { date: "8 月 15 日",           desc: "复读" },
       ]
   - year: 2023
     meta: [
-        { date: "6 月 7 日",            desc: "参加高考" },
-        { date: "6 月 23 日",           desc: "高考出成绩" },
-        { date: "7 月 22 日",           desc: "高考录取" },
+        { date: "6 月 7 日",            desc: "高考" },
+        { date: "6 月 23 日",           desc: "出分" },
+        { date: "7 月 22 日",           desc: "录取" },
         { date: "8 月 24 日",           desc: "浙江大学竺可桢学院图灵班就读" },
+        { date: "8 月",                 desc: "十八岁生日快乐！" },
+        { date: "12 月 31 日",          desc: "和朋友参加学校的跨年活动，最快乐的时光" },
+      ]
+  - year: 2024
+    meta: [
+        { date: "这一年",               desc: "故事还在书写" },
       ]
