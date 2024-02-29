@@ -9,7 +9,7 @@ import config from "../config.yml";
     <span>
         <div class="reveal reveal-hide text-5xl tracking-wider mb-3 h-14">时光</div>
         <div>
-            <p class="font-bold reveal reveal-hide">Epic of my own.</p>
+            <p class="font-bold reveal reveal-hide">Stories yet to be told.</p>
 
             <div class="reveal reveal-hide sm:mx-2 -mx-2 h-0 border-t"></div>
             <ul class="sm:mx-2 -mx-2 sm:px-10 pt-7">
