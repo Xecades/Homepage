@@ -113,7 +113,7 @@ timeline:
       ]
   - year: 2020
     meta: [
-        { date: "寒假",                 desc: "学习 npm、nodejs、web、vue" },
+        { date: "寒假",                 desc: "学习 npm、nodejs、vue" },
         { date: "寒假",                 desc: "大幅更新 / 重构博客" },
         { date: "补充",                 desc: "初识人工智能，编写其可视化程序" },
         { date: "补充",                 desc: "完成 TIY 网页编辑器，里程碑式的进展" },
@@ -126,10 +126,10 @@ timeline:
     meta: [
         { date: "1 月",                 desc: "大幅重构博客，「大道至简」" },
         { date: "2 月 1 日",            desc: "DFT，IDFT 和 FFT！" },
-        { date: "2 月",                 desc: "博客全部迁移至 vercel，采用 CI 部署" },
-        { date: "3 月",                 desc: "自己写的第一个 api 破一万调用" },
+        { date: "2 月",                 desc: "博客全部迁移至 Vercel，采用 CI 部署" },
+        { date: "3 月",                 desc: "自己写的第一个 API 破一万调用" },
         { date: "3 月 17 日",           desc: "学习偏导、隐式方程绘制" },
-        { date: "3 月",                 desc: "在阿里云试用了一个月的 ecs" },
+        { date: "3 月",                 desc: "在阿里云试用了一个月的 ECS" },
         { date: "4 月",                 desc: "重新开始玩几年前买的树莓派" },
         { date: "6 月 7 日",            desc: "高二提前高考" },
         { date: "暑假",                 desc: "第一个摆脱了电脑的暑假" },
@@ -155,10 +155,11 @@ timeline:
   - year: 2024
     meta: [
         { date: "这一年",               desc: "故事还在书写" },
-        { date: "1 月 1 日",            desc: "遇到了「一个人」" },
+        { date: "1 月 1 日",            desc: "「一个人」" },
         { date: "1 月 31 日",           desc: "为图灵班编写的通识课评价系统投入使用！" },
         { date: "2 月",                 desc: "成为 TuringCourses 周年活动委员会成员" },
-        { date: "2 月",                 desc: "用树莓派做了一个相机作为礼物" },
         { date: "2 月 9 日",            desc: "为周年活动编写的排行榜上线" },
-        { date: "2 月 14 日",           desc: "不再「一个人」" },
+        { date: "2 月",                 desc: "用树莓派做了一个相机作为礼物" },
+        { date: "2 月 14 日",           desc: "「两个人」" },
+        { date: "2 月 20 日",           desc: "换掉了用了 2 年的头像" },
       ]
