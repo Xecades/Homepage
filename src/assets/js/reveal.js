@@ -1,4 +1,4 @@
-const MS_BETWEEN_REVEALS = 60;
+const MS_BETWEEN_REVEALS = 40;
 
 function reveal() {
     let targets = document.querySelectorAll(".main .reveal");
