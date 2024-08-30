@@ -28,7 +28,7 @@ else computedMode.value = $.mode;
 a {
     color: rgb(0, 93, 146);
 
-    @apply transition-opacity duration-200 opacity-70 dark:text-sky-300;
+    @apply transition-opacity duration-200 opacity-70 dark:text-sky-300 inline-flex;
 }
 
 a:hover {
