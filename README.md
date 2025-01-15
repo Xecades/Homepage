@@ -1,10 +1,10 @@
-# \[α\] :: Homepage \[α\]
+# Alpha :: Homepage \[α\]
 
-Part of the **Alpha \[α\]** project.
+Part of the **Alpha α** project.
 
- - **Homepage**: [xecades.xyz](https://xecades.xyz/)
- - **Note**: [note.xecades.xyz](https://note.xecades.xyz/) (*WIP*)
- - **Blog**: [blog.xecades.xyz](https://blog.xecades.xyz/) (*WIP*)
+ - **Homepage**: [xecades.xyz](https://xecades.xyz/) (This Repo)
+ - **Note**: [note.xecades.xyz](https://note.xecades.xyz/) ([Xecades/Alpha](https://github.com/Xecades/Alpha)) (*WIP*)
+ - **Blog**: [blog.xecades.xyz](https://blog.xecades.xyz/) (Private Repo) (*WIP*)
 
 ---
 
