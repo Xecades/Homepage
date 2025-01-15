@@ -1,3 +1,7 @@
 {
-    "rewrites": [{ "source": "/:path*", "destination": "/" }]
+    "rewrites": [{ "source": "/:path*", "destination": "/" }],
+    "trailingSlash": false,
+    "github": {
+        "enabled": false
+    }
 }

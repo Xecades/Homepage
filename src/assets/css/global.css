@@ -1,76 +1,131 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Styles applied before app loads, which prevents flickering. */
 
-@layer components {
-    .pho {
-        font-family: "Noto Serif", serif;
-    }
+@import url("https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@200..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/libertinus-serif");
 
-    .no-drag {
-        -webkit-user-drag: none;
-    }
+:root {
+    --font-color: #4b5563;
+    --font-family: "Libertinus Serif", "Georgia", "Noto Serif SC", songti sc,
+        serif;
+    --selection-bg: #b3b3b34f;
+    --background-opacity: 0.024;
+}
 
-    .min-w-52 {
-        min-width: 13rem;
-    }
-
-    .min-w-40 {
-        min-width: 10rem;
-    }
-
-    .left-1\/8 {
-        left: 12.5%;
-    }
-
-    .reveal {
-        @apply transition-all duration-500;
-    }
-
-    .reveal-hide {
-        @apply opacity-0 translate-y-1;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-color: #d1d5db;
+        --selection-bg: #6567694f;
+        --background-color: #1a1b1c;
+        --background-opacity: 0.012;
     }
 }
 
+/* Overlay Scrollbar Theme */
+.os-theme-dark .os-scrollbar-handle {
+    --os-handle-bg: rgba(0, 0, 0, 0.44);
+    --os-handle-bg-hover: rgba(0, 0, 0, 0.55);
+    --os-handle-bg-active: rgba(0, 0, 0, 0.66);
+}
+
+@media (prefers-color-scheme: dark) {
+    .os-theme-dark .os-scrollbar-handle {
+        --os-handle-bg: rgba(255, 255, 255, 0.44);
+        --os-handle-bg-hover: rgba(255, 255, 255, 0.55);
+        --os-handle-bg-active: rgba(255, 255, 255, 0.66);
+    }
+}
+
+/* Global Fonts */
+body {
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+/* Tap / Selection / Outline Effects */
 * {
     -webkit-tap-highlight-color: transparent;
-    scrollbar-width: none;
 }
 
 *::selection {
-    background-color: rgba(187, 221, 251, 0.5);
+    background-color: var(--selection-bg);
 }
 
-*::-webkit-scrollbar {
-    @apply hidden;
-}
-
-html {
-    overflow-y: scroll !important;
-}
-
-html,
 body {
+    outline: none;
+}
+
+/* Background Image */
+body > #global-background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
     background-image: radial-gradient(
             circle at 28% 29%,
-            #ededed06 0%,
-            #ededed06 50%,
-            #88888806 50%,
-            #88888806 100%
+            rgba(237, 237, 237, var(--background-opacity)) 0%,
+            rgba(237, 237, 237, var(--background-opacity)) 50%,
+            rgba(136, 136, 136, var(--background-opacity)) 50%,
+            rgba(136, 136, 136, var(--background-opacity)) 100%
         ),
         radial-gradient(
             circle at 8% 78%,
-            #9c9c9c06 0%,
-            #9c9c9c06 50%,
-            #25252506 50%,
-            #25252506 100%
-        ),
-        linear-gradient(90deg, #fff, #fff);
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    @apply overflow-x-hidden bg-no-repeat bg-fixed outline-none dark:bg-none dark:bg-neutral-900
+            rgba(156, 156, 156, var(--background-opacity)) 0%,
+            rgba(156, 156, 156, var(--background-opacity)) 50%,
+            rgba(37, 37, 37, var(--background-opacity)) 50%,
+            rgba(37, 37, 37, var(--background-opacity)) 100%
+        );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
+body {
+    background-color: var(--background-color, none);
+}
+
+/* Scrollbar Flickering Prevention */
+html {
+    padding-right: calc(100% - 100vw);
+    overflow-x: hidden;
+}
+
+/* ScrollReveal.js Flicker Prevention */
+html.sr .rv,
+html.sr .note-layout #content > header h1,
+html.sr .note-layout #content > .metadata,
+html.sr .note-layout #content .markdown > *,
+html.sr .note-layout #left,
+html.sr .note-layout .timestamp > *,
+/* html.sr .note-layout #twikoo .tk-submit .tk-row,
+html.sr .note-layout #twikoo .tk-comments-container > *:not(.tk-comments-no) { */
+html.sr .note-layout #twikoo {
+    visibility: hidden;
+}
+
+/* Partial Styles */
+.indent {
+    text-indent: 2.25rem;
+}
+
+.no-select {
+    user-select: none;
+}
+
+/* Prevent Scrollbar Flickering */
 #app {
-    font-family: "EB Garamond", "Noto Serif SC", songti sc, serif;
+    width: 100vw;
+}
+
+/* Animation */
+@keyframes shake-x {
+    0%,
+    100% {
+        transform: translateX(2px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
 }

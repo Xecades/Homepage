@@ -1,16 +1,15 @@
-<script setup>
-const $ = defineProps({
-    text: String,
-    rbclass: String,
-    rtclass: String,
-    class: String
-});
+<script setup lang="ts">
+const props = defineProps<{
+    text: string;
+    rbclass?: string;
+    rtclass?: string;
+}>();
 </script>
 
 <template>
-    <ruby :class="class">
+    <ruby>
         <rb :class="rbclass">
-            <slot></slot>
+            <slot />
         </rb>
         <rt :class="rtclass">
             {{ text }}
@@ -20,6 +19,8 @@ const $ = defineProps({
 
 <style scoped>
 rt {
-    @apply text-xs text-center
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
 }
 </style>

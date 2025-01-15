@@ -1,23 +1,41 @@
 {
-  "name": "project-xec-homepage",
-  "version": "2.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "image-promise": "^7.0.1",
-    "vue": "^3.3.4",
-    "vue-router": "^4.2.4"
-  },
-  "devDependencies": {
-    "@modyfi/vite-plugin-yaml": "^1.0.4",
-    "@vitejs/plugin-vue": "^4.3.4",
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3",
-    "vite": "^4.4.9"
-  }
+    "name": "homepage",
+    "version": "2.1.0",
+    "private": true,
+    "type": "module",
+    "author": {
+        "name": "Xecades",
+        "email": "i@xecades.xyz",
+        "url": "https://xecades.xyz"
+    },
+    "description": "Yet another personal website.",
+    "license": "GPL-3.0-only",
+    "scripts": {
+        "dev": "vite",
+        "build": "run-p type-check \"build-only {@}\" --",
+        "preview": "vite preview",
+        "build-only": "vite build",
+        "type-check": "vue-tsc --build"
+    },
+    "dependencies": {
+        "is-relative-url": "^4.0.0",
+        "scrollreveal": "^4.0.9",
+        "vercel": "^39.3.0",
+        "vue": "^3.5.13",
+        "vue-router": "^4.5.0"
+    },
+    "devDependencies": {
+        "@tsconfig/node22": "^22.0.0",
+        "@types/node": "^22.10.2",
+        "@types/scrollreveal": "^0.0.11",
+        "@vitejs/plugin-vue": "^5.2.1",
+        "@vitejs/plugin-vue-jsx": "^4.1.1",
+        "@vue/tsconfig": "^0.7.0",
+        "autoprefixer": "^10.4.20",
+        "npm-run-all2": "^7.0.2",
+        "typescript": "~5.6.3",
+        "vite": "^6.0.5",
+        "vite-plugin-vue-devtools": "^7.6.8",
+        "vue-tsc": "^2.1.10"
+    }
 }

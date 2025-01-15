@@ -1,11 +1,12 @@
-## Xecades's Homepage
+# \[α\] :: Homepage \[α\]
 
-**DEPRECATED**: This is the old version of my homepage. The new version is available at [Xecades::Alpha](https://github.com/xecades/alpha).
+Part of the **Alpha \[α\]** project.
+
+ - **Homepage**: [xecades.xyz](https://xecades.xyz/)
+ - **Note**: [note.xecades.xyz](https://note.xecades.xyz/) (*WIP*)
+ - **Blog**: [blog.xecades.xyz](https://blog.xecades.xyz/) (*WIP*)
 
 ---
 
-see: https://xecades.xyz/
-
-Coded by Xecades.
-
-**MIT License**
+ - **Tech stack**: Vite, Vue.js, TypeScript
+ - **License**: GPL-3.0
