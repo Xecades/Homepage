@@ -7,7 +7,7 @@ const data = {
     "subtitle": "我是 Xecades，",
     "body": [
         [
-            ruby("“Xecades”", "/'zɛkeɪdz/", "home-IPA-ruby"),
+            ruby("“Xecades”", "/'zɛkeɪdz/"),
             " 是我广泛使用的网名，通过键入它，你可以在互联网上找到所有我的",
             link(ruby("踪迹", "/about"), "/about"), "。",
         ],

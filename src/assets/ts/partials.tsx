@@ -8,10 +8,8 @@ export type Element = JSX.Element | string;
 // General Snippets
 export const hr = () => <hr class="rv" />;
 export const small = (body: Element) => <p class="rv indent small">{body}</p>;
-export const ruby = (body: Element, text: string, rtclass?: string) => (
-    <RubyText text={text} rtclass={rtclass}>
-        {body}
-    </RubyText>
+export const ruby = (body: Element, text: string) => (
+    <RubyText text={text}>{body}</RubyText>
 );
 
 export const link = (

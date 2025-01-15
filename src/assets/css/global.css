@@ -20,21 +20,6 @@
     }
 }
 
-/* Overlay Scrollbar Theme */
-.os-theme-dark .os-scrollbar-handle {
-    --os-handle-bg: rgba(0, 0, 0, 0.44);
-    --os-handle-bg-hover: rgba(0, 0, 0, 0.55);
-    --os-handle-bg-active: rgba(0, 0, 0, 0.66);
-}
-
-@media (prefers-color-scheme: dark) {
-    .os-theme-dark .os-scrollbar-handle {
-        --os-handle-bg: rgba(255, 255, 255, 0.44);
-        --os-handle-bg-hover: rgba(255, 255, 255, 0.55);
-        --os-handle-bg-active: rgba(255, 255, 255, 0.66);
-    }
-}
-
 /* Global Fonts */
 body {
     font-family: var(--font-family);
@@ -92,15 +77,7 @@ html {
 }
 
 /* ScrollReveal.js Flicker Prevention */
-html.sr .rv,
-html.sr .note-layout #content > header h1,
-html.sr .note-layout #content > .metadata,
-html.sr .note-layout #content .markdown > *,
-html.sr .note-layout #left,
-html.sr .note-layout .timestamp > *,
-/* html.sr .note-layout #twikoo .tk-submit .tk-row,
-html.sr .note-layout #twikoo .tk-comments-container > *:not(.tk-comments-no) { */
-html.sr .note-layout #twikoo {
+html.sr .rv {
     visibility: hidden;
 }
 
@@ -116,16 +93,4 @@ html.sr .note-layout #twikoo {
 /* Prevent Scrollbar Flickering */
 #app {
     width: 100vw;
-}
-
-/* Animation */
-@keyframes shake-x {
-    0%,
-    100% {
-        transform: translateX(2px);
-    }
-
-    50% {
-        transform: translateX(0);
-    }
 }
