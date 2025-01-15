@@ -24,9 +24,6 @@ jobs:
             - name: Install Dependencies
               run: npm install
 
-            - name: Generate Cache
-              run: npm run cache
-
             - name: Build Project
               run: npm run build
 
