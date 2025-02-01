@@ -52,6 +52,11 @@ const raw = [
         money: 11.45,
         desc: "加油鸭",
     },
+    {
+        nick: "dreamweber",
+        money: 50.0,
+        desc: "高山仰止，佩服敬佩之情难以言表",
+    },
 ].reverse();
 
 const show: Ref<boolean> = ref(false);
