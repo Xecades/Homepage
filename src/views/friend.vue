@@ -36,6 +36,11 @@ const data = {
                 name: "memset0",
                 desc: "在海月的虚空中，纵身飞过秋凉的时鸟。",
                 url: "https://mem.ac/",
+            },
+            {
+                name: "Hash",
+                desc: "故人故事故纸堆",
+                url: "https://land.hash.memorial/",
             }
         ]),
         ["你可以点", link(ruby("这里", "/index"), "/"), "回到主页。"],
