@@ -28,11 +28,6 @@ const data = {
                 url: "https://frightenedfoxcn.github.io/notes/",
             },
             {
-                name: "fufu酱",
-                desc: "“爱折腾的大学生”",
-                url: "https://csfufu.life/",
-            },
-            {
                 name: "memset0",
                 desc: "在海月的虚空中，纵身飞过秋凉的时鸟。",
                 url: "https://mem.ac/",
