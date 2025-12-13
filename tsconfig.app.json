@@ -10,7 +10,6 @@
         "jsxImportSource": "vue",
         "lib": ["ES2021", "DOM"],
 
-        "baseUrl": ".",
         "paths": {
             "@/*": ["./src/*"]
         }
