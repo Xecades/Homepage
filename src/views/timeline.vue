@@ -119,7 +119,6 @@ const data = {
                 meta: [
                     { date: "2 月 1 日", desc: "四年前的梦想：笔记渲染引擎正式完工" },
                     { date: "3 月 3 日", desc: "联系好了科研导师，确定 CV 方向" },
-                    { date: "5 月 15 日", desc: "论文 AerialExtreMatch 正文投稿 NeurIPS 2025" },
                 ]
             },
         ]),
